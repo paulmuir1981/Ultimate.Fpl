@@ -1,0 +1,454 @@
+﻿@page
+@model Ultimate.Fpl.Pages.PlayersModel
+@{
+    ViewData["Title"] = "Players";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Players</h1>
+</div>
+<table class="table table-striped table-hover" id="tablePlayers" style="width: 100%; display: none;">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Players[0].WebName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Players[0].ClubShortName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Players[0].PositionShortName)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].Price)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].TotalPoints)
+            </th>
+            <th title="Value Season" class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].ValueSeason)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].Form)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].PointsPerGame)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].PointsPerGameValue)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].SelectedByPercent)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].ValueForm)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].Influence)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].Creativity)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].Threat)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].IctIndex)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].IctIndexValue)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].ChanceOfPlayingNextRound)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].ChanceOfPlayingThisRound)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].Code)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].CostChangeEvent)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].CostChangeEventFall)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].CostChangeStart)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].CostChangeStartFall)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].DreamteamCount)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].EpNext)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].EpThis)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].EventPoints)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Players[0].FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Players[0].FirstNameDiacriticless)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].InDreamteam)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Players[0].News)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].NewsAdded)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Players[0].Photo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Players[0].SecondName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Players[0].SecondNameDiacriticless)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].Special)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].SquadNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Players[0].Status)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].TransfersIn)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].TransfersInEvent)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].TransfersOut)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].TransfersOutEvent)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Players[0].WebNameDiacriticless)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].Minutes)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].PointsPerMinute)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].GoalsScored)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].Assists)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].CleanSheets)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].GoalsConceded)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].OwnGoals)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].PenaltiesSaved)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].PenaltiesMissed)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].YellowCards)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].RedCards)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].Saves)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].Bonus)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].Bps)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].InfluenceRank)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].InfluenceRankType)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].CreativityRank)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].CreativityRankType)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].ThreatRank)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].ThreatRankType)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].IctIndexRank)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].IctIndexRankType)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].CornersAndIndirectFreekicksOrder)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Players[0].CornersAndIndirectFreekicksText)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].DirectFreekicksOrder)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Players[0].DirectFreekicksText)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].PenaltiesOrder)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Players[0].PenaltiesText)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Players[0].ClubId)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Players)
+        {
+        <tr>
+            <td title="@item.FullName">
+                @Html.DisplayFor(modelItem => item.WebName)
+            </td>
+            <td title="@item.ClubName">
+                @Html.DisplayFor(modelItem => item.ClubShortName)
+            </td>
+            <td title="@item.PositionName">
+                @Html.DisplayFor(modelItem => item.PositionShortName)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.TotalPoints)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.ValueSeason)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.Form)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.PointsPerGame)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.PointsPerGameValue)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.SelectedByPercent)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.ValueForm)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.Influence)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.Creativity)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.Threat)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.IctIndex)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.IctIndexValue)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.ChanceOfPlayingNextRound)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.ChanceOfPlayingThisRound)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.Code)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.CostChangeEvent)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.CostChangeEventFall)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.CostChangeStart)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.CostChangeStartFall)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.DreamteamCount)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.EpNext)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.EpThis)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.EventPoints)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstNameDiacriticless)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.InDreamteam)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.News)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.NewsAdded)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Photo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SecondName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SecondNameDiacriticless)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.Special)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.SquadNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.TransfersIn)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.TransfersInEvent)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.TransfersOut)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.TransfersOutEvent)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WebNameDiacriticless)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.Minutes)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.PointsPerMinute)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.GoalsScored)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.Assists)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.CleanSheets)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.GoalsConceded)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.OwnGoals)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.PenaltiesSaved)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.PenaltiesMissed)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.YellowCards)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.RedCards)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.Saves)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.Bonus)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.Bps)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.InfluenceRank)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.InfluenceRankType)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.CreativityRank)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.CreativityRankType)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.ThreatRank)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.ThreatRankType)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.IctIndexRank)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.IctIndexRankType)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.CornersAndIndirectFreekicksOrder)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CornersAndIndirectFreekicksText)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.DirectFreekicksOrder)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DirectFreekicksText)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.PenaltiesOrder)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PenaltiesText)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClubId)
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
