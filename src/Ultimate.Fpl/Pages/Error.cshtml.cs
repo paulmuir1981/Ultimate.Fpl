@@ -1,7 +1,7 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.Extensions.Logging;
+using Serilog;
 
 namespace Ultimate.Fpl.Pages
 {
@@ -13,15 +13,9 @@ namespace Ultimate.Fpl.Pages
 
         public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
 
-        private readonly ILogger<ErrorModel> _logger;
-
-        public ErrorModel(ILogger<ErrorModel> logger)
-        {
-            _logger = logger;
-        }
-
         public void OnGet()
         {
+            Log.Debug($"{nameof(OnGet)} invoked");
             RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
         }
     }

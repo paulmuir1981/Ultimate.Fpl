@@ -16,6 +16,9 @@ namespace Ultimate.Fpl.Profiles
                     dest => dest.ClubId,
                     opt => opt.MapFrom(src => src.Team))
                 .ForMember(
+                    dest => dest.Availability,
+                    opt => opt.MapFrom(src => src.ChanceOfPlayingNextRound.GetValueOrDefault(100)))
+                .ForMember(
                     dest => dest.PositionId,
                     opt => opt.MapFrom(src => src.ElementType))
                 .ForMember(

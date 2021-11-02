@@ -33,7 +33,7 @@ namespace Ultimate.Fpl.Tests.Services
         }
 
         [Fact]
-        public async Task GetPlayersAsync_Cached_Ok()
+        public async Task GetAsync_Cached_Ok()
         {
             var expectedPlayerId = _random.Next();
             var expectedWebName = Guid.NewGuid().ToString();
@@ -46,8 +46,10 @@ namespace Ultimate.Fpl.Tests.Services
             var expectedData = new Models.Data { Players = new List<Player> { expectedPlayer } };
             _mockCache.Setup(x => x.GetDataAsync(It.IsAny<CancellationToken>())).ReturnsAsync(expectedData);
 
-            var actualPlayers = await _dataService.GetPlayersAsync();
+            var actualData = await _dataService.GetAsync();
 
+            Assert.NotNull(actualData);
+            var actualPlayers = actualData.Players;
             Assert.Single(actualPlayers);
             var actualPlayer = actualPlayers[0];
             Assert.Equal(expectedPlayerId, actualPlayer.Id);
@@ -57,7 +59,7 @@ namespace Ultimate.Fpl.Tests.Services
         }
 
         [Fact]
-        public async Task GetPlayersAsync_NotCached_Ok()
+        public async Task GetAsync_NotCached_Ok()
         {
             var expectedPlayerId = _random.Next();
             var expectedClubId = _random.Next();
@@ -95,8 +97,10 @@ namespace Ultimate.Fpl.Tests.Services
             _mockCache.Setup(x => x.GetDataAsync(It.IsAny<CancellationToken>())).ReturnsAsync(null as Models.Data);
             _mockCache.Setup(x => x.SetDataAsync(It.IsAny<Models.Data>(), It.IsAny<CancellationToken>())).Returns(Task.CompletedTask);
 
-            var actualPlayers = await _dataService.GetPlayersAsync();
+            var actualData = await _dataService.GetAsync();
 
+            Assert.NotNull(actualData);
+            var actualPlayers = actualData.Players;
             Assert.Single(actualPlayers);
             var actualPlayer = actualPlayers[0];
             Assert.Equal(expectedPlayerId, actualPlayer.Id);
