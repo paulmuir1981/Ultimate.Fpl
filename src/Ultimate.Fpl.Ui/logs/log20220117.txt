@@ -1,0 +1,180 @@
+2022-01-17 20:24:31.033 +00:00 [INF] (Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager) User profile is available. Using 'C:\Users\paulm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-01-17 20:24:31.338 +00:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: https://localhost:7256
+2022-01-17 20:24:31.338 +00:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: http://localhost:5256
+2022-01-17 20:24:31.340 +00:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2022-01-17 20:24:31.341 +00:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: Development
+2022-01-17 20:24:31.342 +00:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: C:\Users\paulm\OneDrive\Documents\GitHub\Ultimate.Fpl\src\Ultimate.Fpl.Ui\
+2022-01-17 20:24:32.374 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/ - -
+2022-01-17 20:24:32.661 +00:00 [INF] (Microsoft.AspNetCore.Routing.EndpointMiddleware) Executing endpoint '/Index'
+2022-01-17 20:24:32.736 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Route matched with {page = "/Index", area = "", action = "", controller = ""}. Executing page /Index
+2022-01-17 20:24:32.754 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executing handler method Ultimate.Fpl.Ui.Pages.IndexModel.OnGet - ModelState is "Valid"
+2022-01-17 20:24:32.760 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executed handler method OnGet, returned result .
+2022-01-17 20:24:32.767 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executing an implicit handler method - ModelState is "Valid"
+2022-01-17 20:24:32.768 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-01-17 20:24:32.970 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executed page /Index in 227.7517ms
+2022-01-17 20:24:32.975 +00:00 [INF] (Microsoft.AspNetCore.Routing.EndpointMiddleware) Executed endpoint '/Index'
+2022-01-17 20:24:33.005 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/ - - - 200 - text/html;+charset=utf-8 648.4088ms
+2022-01-17 20:24:33.047 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/lib/bootstrap/dist/css/bootstrap.min.css - -
+2022-01-17 20:24:33.051 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - -
+2022-01-17 20:24:33.047 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/Ultimate.Fpl.Ui.styles.css?v=kRjc9xKV6cA0cFn_zncwxIul0O-zTD6Y81mr-5kr2DU - -
+2022-01-17 20:24:33.051 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/lib/jquery/dist/jquery.min.js - -
+2022-01-17 20:24:33.051 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+2022-01-17 20:24:33.052 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/css/site.css?v=juqV8I1DeVs3ycwz4c0gy-3agg8ObuDJb5Y_CUfN-BE - -
+2022-01-17 20:24:33.056 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - - - 200 11949 application/javascript;+charset=utf-8 5.1548ms
+2022-01-17 20:24:33.062 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - -
+2022-01-17 20:24:33.075 +00:00 [INF] (Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware) Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\paulm\OneDrive\Documents\GitHub\Ultimate.Fpl\src\Ultimate.Fpl.Ui\wwwroot\css\site.css'
+2022-01-17 20:24:33.079 +00:00 [INF] (Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware) The file /lib/bootstrap/dist/js/bootstrap.bundle.min.js was not modified
+2022-01-17 20:24:33.079 +00:00 [INF] (Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware) The file /lib/bootstrap/dist/css/bootstrap.min.css was not modified
+2022-01-17 20:24:33.079 +00:00 [INF] (Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware) The file /lib/jquery/dist/jquery.min.js was not modified
+2022-01-17 20:24:33.079 +00:00 [INF] (Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware) The file /Ultimate.Fpl.Ui.styles.css was not modified
+2022-01-17 20:24:33.079 +00:00 [INF] (Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware) The file /js/site.js was not modified
+2022-01-17 20:24:33.079 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/css/site.css?v=juqV8I1DeVs3ycwz4c0gy-3agg8ObuDJb5Y_CUfN-BE - - - 200 457 text/css 27.8094ms
+2022-01-17 20:24:33.080 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 304 - application/javascript 28.8994ms
+2022-01-17 20:24:33.085 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/Ultimate.Fpl.Ui.styles.css?v=kRjc9xKV6cA0cFn_zncwxIul0O-zTD6Y81mr-5kr2DU - - - 304 - text/css 37.1859ms
+2022-01-17 20:24:33.083 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/lib/jquery/dist/jquery.min.js - - - 304 - application/javascript 31.7494ms
+2022-01-17 20:24:33.086 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 304 - application/javascript 23.7590ms
+2022-01-17 20:24:33.081 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/lib/bootstrap/dist/css/bootstrap.min.css - - - 304 - text/css 34.8639ms
+2022-01-17 20:24:56.971 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/MySquad - -
+2022-01-17 20:24:56.978 +00:00 [INF] (Microsoft.AspNetCore.Routing.EndpointMiddleware) Executing endpoint '/MySquad/Index'
+2022-01-17 20:24:56.985 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Route matched with {page = "/MySquad/Index", area = "", action = "", controller = ""}. Executing page /MySquad/Index
+2022-01-17 20:24:57.387 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executing handler method Ultimate.Fpl.Ui.Pages.MySquad.IndexModel.OnGetAsync - ModelState is "Valid"
+2022-01-17 20:24:57.391 +00:00 [INF] (Ultimate.Fpl.Ui.Pages.MySquad.IndexModel) OnGetAsync invoked
+2022-01-17 20:24:57.396 +00:00 [INF] (Ultimate.Fpl.Ui.Services.SquadService) GetAsync invoked
+2022-01-17 20:24:57.400 +00:00 [INF] (Ultimate.Fpl.Ui.Services.DataService) GetAsync invoked
+2022-01-17 20:24:57.401 +00:00 [INF] (Ultimate.Fpl.Ui.Services.CacheService) GetDataAsync invoked
+2022-01-17 20:24:57.406 +00:00 [INF] (Fpl.Client.Clients.GeneralClient) GetDataAsync invoked
+2022-01-17 20:24:57.426 +00:00 [INF] (Fpl.Client.Clients.GeneralClient) GetAsync invoked
+2022-01-17 20:24:57.432 +00:00 [INF] (System.Net.Http.HttpClient.IGeneralClient.LogicalHandler) Start processing HTTP request GET "https://fantasy.premierleague.com/api/bootstrap-static/"
+2022-01-17 20:24:57.434 +00:00 [INF] (System.Net.Http.HttpClient.IGeneralClient.ClientHandler) Sending HTTP request GET "https://fantasy.premierleague.com/api/bootstrap-static/"
+2022-01-17 20:24:57.757 +00:00 [INF] (System.Net.Http.HttpClient.IGeneralClient.ClientHandler) Received HTTP response headers after 313.4748ms - 200
+2022-01-17 20:24:57.763 +00:00 [INF] (System.Net.Http.HttpClient.IGeneralClient.LogicalHandler) End processing HTTP request after 332.8625ms - 200
+2022-01-17 20:24:58.118 +00:00 [INF] (Ultimate.Fpl.Ui.Services.CacheService) SetDataAsync invoked
+2022-01-17 20:24:58.231 +00:00 [INF] (Ultimate.Fpl.Ui.Services.CacheService) GetDataAsync invoked
+2022-01-17 20:24:58.235 +00:00 [INF] (Fpl.Client.Clients.EntryClient) GetEventPicksAsync invoked
+2022-01-17 20:24:58.237 +00:00 [INF] (Fpl.Client.Clients.EntryClient) GetAsync invoked
+2022-01-17 20:24:58.240 +00:00 [INF] (System.Net.Http.HttpClient.IEntryClient.LogicalHandler) Start processing HTTP request GET "https://fantasy.premierleague.com/api/entry/5514/event/22/picks/"
+2022-01-17 20:24:58.244 +00:00 [INF] (System.Net.Http.HttpClient.IEntryClient.ClientHandler) Sending HTTP request GET "https://fantasy.premierleague.com/api/entry/5514/event/22/picks/"
+2022-01-17 20:24:58.269 +00:00 [INF] (System.Net.Http.HttpClient.IEntryClient.ClientHandler) Received HTTP response headers after 20.7501ms - 200
+2022-01-17 20:24:58.271 +00:00 [INF] (System.Net.Http.HttpClient.IEntryClient.LogicalHandler) End processing HTTP request after 30.6784ms - 200
+2022-01-17 20:24:58.292 +00:00 [INF] (Ultimate.Fpl.Ui.Services.CacheService) SetDataAsync invoked
+2022-01-17 20:24:58.300 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executed handler method OnGetAsync, returned result .
+2022-01-17 20:24:58.302 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executing an implicit handler method - ModelState is "Valid"
+2022-01-17 20:24:58.304 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-01-17 20:24:58.422 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executed page /MySquad/Index in 1432.4733ms
+2022-01-17 20:24:58.425 +00:00 [INF] (Microsoft.AspNetCore.Routing.EndpointMiddleware) Executed endpoint '/MySquad/Index'
+2022-01-17 20:24:58.438 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/MySquad - - - 200 - text/html;+charset=utf-8 1467.2778ms
+2022-01-17 20:24:58.481 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - -
+2022-01-17 20:24:58.484 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - - - 200 11949 application/javascript;+charset=utf-8 2.6050ms
+2022-01-17 20:57:34.505 +00:00 [INF] (Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager) User profile is available. Using 'C:\Users\paulm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-01-17 20:57:34.875 +00:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: https://localhost:7256
+2022-01-17 20:57:34.877 +00:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: http://localhost:5256
+2022-01-17 20:57:34.878 +00:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2022-01-17 20:57:34.879 +00:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: Development
+2022-01-17 20:57:34.881 +00:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: C:\Users\paulm\OneDrive\Documents\GitHub\Ultimate.Fpl\src\Ultimate.Fpl.Ui\
+2022-01-17 20:57:35.637 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/ - -
+2022-01-17 20:57:35.778 +00:00 [INF] (Microsoft.AspNetCore.Routing.EndpointMiddleware) Executing endpoint '/Index'
+2022-01-17 20:57:35.802 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Route matched with {page = "/Index", area = "", action = "", controller = ""}. Executing page /Index
+2022-01-17 20:57:35.809 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executing handler method Ultimate.Fpl.Ui.Pages.IndexModel.OnGet - ModelState is "Valid"
+2022-01-17 20:57:35.812 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executed handler method OnGet, returned result .
+2022-01-17 20:57:35.817 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executing an implicit handler method - ModelState is "Valid"
+2022-01-17 20:57:35.818 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-01-17 20:57:35.952 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executed page /Index in 144.8226ms
+2022-01-17 20:57:35.953 +00:00 [INF] (Microsoft.AspNetCore.Routing.EndpointMiddleware) Executed endpoint '/Index'
+2022-01-17 20:57:35.968 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/ - - - 200 - text/html;+charset=utf-8 339.1835ms
+2022-01-17 20:57:35.992 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - -
+2022-01-17 20:57:35.995 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - - - 200 11949 application/javascript;+charset=utf-8 3.7295ms
+2022-01-17 20:57:50.473 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/ - -
+2022-01-17 20:57:50.480 +00:00 [INF] (Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler) OpenIdConnect was not authenticated. Failure message: Not authenticated
+2022-01-17 20:57:50.483 +00:00 [INF] (Microsoft.AspNetCore.Authorization.DefaultAuthorizationService) Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-01-17 20:57:51.309 +00:00 [INF] (Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler) AuthenticationScheme: OpenIdConnect was challenged.
+2022-01-17 20:57:51.314 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/ - - - 302 0 - 841.1750ms
+2022-01-17 20:58:50.984 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 POST https://localhost:7256/signin-oidc application/x-www-form-urlencoded 2274
+2022-01-17 20:58:51.331 +00:00 [INF] (Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler) AuthenticationScheme: Cookies signed in.
+2022-01-17 20:58:51.336 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 POST https://localhost:7256/signin-oidc application/x-www-form-urlencoded 2274 - 302 0 - 352.0144ms
+2022-01-17 20:58:51.355 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/ - -
+2022-01-17 20:58:51.362 +00:00 [INF] (Microsoft.AspNetCore.Routing.EndpointMiddleware) Executing endpoint '/Index'
+2022-01-17 20:58:51.366 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Route matched with {page = "/Index", area = "", action = "", controller = ""}. Executing page /Index
+2022-01-17 20:58:51.370 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executing handler method Ultimate.Fpl.Ui.Pages.IndexModel.OnGet - ModelState is "Valid"
+2022-01-17 20:58:51.372 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executed handler method OnGet, returned result .
+2022-01-17 20:58:51.374 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executing an implicit handler method - ModelState is "Valid"
+2022-01-17 20:58:51.375 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-01-17 20:58:51.399 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executed page /Index in 29.6588ms
+2022-01-17 20:58:51.401 +00:00 [INF] (Microsoft.AspNetCore.Routing.EndpointMiddleware) Executed endpoint '/Index'
+2022-01-17 20:58:51.405 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/ - - - 200 - text/html;+charset=utf-8 50.0183ms
+2022-01-17 20:58:51.464 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/lib/bootstrap/dist/css/bootstrap.min.css - -
+2022-01-17 20:58:51.535 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/css/site.css?v=juqV8I1DeVs3ycwz4c0gy-3agg8ObuDJb5Y_CUfN-BE - -
+2022-01-17 20:58:51.535 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/Ultimate.Fpl.Ui.styles.css?v=kRjc9xKV6cA0cFn_zncwxIul0O-zTD6Y81mr-5kr2DU - -
+2022-01-17 20:58:51.549 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/lib/jquery/dist/jquery.min.js - -
+2022-01-17 20:58:51.549 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+2022-01-17 20:58:51.550 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - -
+2022-01-17 20:58:51.567 +00:00 [INF] (Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware) Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\paulm\OneDrive\Documents\GitHub\Ultimate.Fpl\src\Ultimate.Fpl.Ui\wwwroot\css\site.css'
+2022-01-17 20:58:51.569 +00:00 [INF] (Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware) Sending file. Request path: '/Ultimate.Fpl.Ui.styles.css'. Physical path: 'C:\Users\paulm\OneDrive\Documents\GitHub\Ultimate.Fpl\src\Ultimate.Fpl.Ui\obj\Debug\net6.0\scopedcss\bundle\Ultimate.Fpl.Ui.styles.css'
+2022-01-17 20:58:51.573 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/css/site.css?v=juqV8I1DeVs3ycwz4c0gy-3agg8ObuDJb5Y_CUfN-BE - - - 200 457 text/css 38.3796ms
+2022-01-17 20:58:51.583 +00:00 [INF] (Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware) Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Users\paulm\OneDrive\Documents\GitHub\Ultimate.Fpl\src\Ultimate.Fpl.Ui\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+2022-01-17 20:58:51.583 +00:00 [INF] (Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware) Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Users\paulm\OneDrive\Documents\GitHub\Ultimate.Fpl\src\Ultimate.Fpl.Ui\wwwroot\lib\jquery\dist\jquery.min.js'
+2022-01-17 20:58:51.582 +00:00 [INF] (Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware) Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\paulm\OneDrive\Documents\GitHub\Ultimate.Fpl\src\Ultimate.Fpl.Ui\wwwroot\js\site.js'
+2022-01-17 20:58:51.585 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/Ultimate.Fpl.Ui.styles.css?v=kRjc9xKV6cA0cFn_zncwxIul0O-zTD6Y81mr-5kr2DU - - - 200 1132 text/css 50.2001ms
+2022-01-17 20:58:51.585 +00:00 [INF] (Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware) Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\paulm\OneDrive\Documents\GitHub\Ultimate.Fpl\src\Ultimate.Fpl.Ui\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2022-01-17 20:58:51.589 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78468 application/javascript 40.2564ms
+2022-01-17 20:58:51.591 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/lib/jquery/dist/jquery.min.js - - - 200 89476 application/javascript 41.7976ms
+2022-01-17 20:58:51.593 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 200 230 application/javascript 42.9747ms
+2022-01-17 20:58:51.594 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - -
+2022-01-17 20:58:51.596 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 162720 text/css 131.8463ms
+2022-01-17 20:58:51.603 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - - - 200 11949 application/javascript;+charset=utf-8 8.4944ms
+2022-01-17 20:58:51.692 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/favicon.ico - -
+2022-01-17 20:58:51.696 +00:00 [INF] (Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware) Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\paulm\OneDrive\Documents\GitHub\Ultimate.Fpl\src\Ultimate.Fpl.Ui\wwwroot\favicon.ico'
+2022-01-17 20:58:51.698 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/favicon.ico - - - 200 5430 image/x-icon 5.7806ms
+2022-01-17 21:03:49.661 +00:00 [INF] (Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager) User profile is available. Using 'C:\Users\paulm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-01-17 21:03:50.025 +00:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: https://localhost:7256
+2022-01-17 21:03:50.027 +00:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: http://localhost:5256
+2022-01-17 21:03:50.029 +00:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2022-01-17 21:03:50.030 +00:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: Development
+2022-01-17 21:03:50.031 +00:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: C:\Users\paulm\OneDrive\Documents\GitHub\Ultimate.Fpl\src\Ultimate.Fpl.Ui\
+2022-01-17 21:03:50.565 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/ - -
+2022-01-17 21:03:50.722 +00:00 [INF] (Microsoft.AspNetCore.Routing.EndpointMiddleware) Executing endpoint '/Index'
+2022-01-17 21:03:50.750 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Route matched with {page = "/Index", area = "", action = "", controller = ""}. Executing page /Index
+2022-01-17 21:03:50.760 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executing handler method Ultimate.Fpl.Ui.Pages.IndexModel.OnGet - ModelState is "Valid"
+2022-01-17 21:03:50.765 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executed handler method OnGet, returned result .
+2022-01-17 21:03:50.773 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executing an implicit handler method - ModelState is "Valid"
+2022-01-17 21:03:50.774 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-01-17 21:03:50.927 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executed page /Index in 171.6768ms
+2022-01-17 21:03:50.929 +00:00 [INF] (Microsoft.AspNetCore.Routing.EndpointMiddleware) Executed endpoint '/Index'
+2022-01-17 21:03:50.946 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/ - - - 200 - text/html;+charset=utf-8 384.1546ms
+2022-01-17 21:03:51.006 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - -
+2022-01-17 21:03:51.009 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - - - 200 11949 application/javascript;+charset=utf-8 2.9491ms
+2022-01-17 21:05:05.980 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/MySquad - -
+2022-01-17 21:05:05.995 +00:00 [INF] (Microsoft.AspNetCore.Routing.EndpointMiddleware) Executing endpoint '/MySquad/Index'
+2022-01-17 21:05:06.003 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Route matched with {page = "/MySquad/Index", area = "", action = "", controller = ""}. Executing page /MySquad/Index
+2022-01-17 21:05:06.375 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executing handler method Ultimate.Fpl.Ui.Pages.MySquad.IndexModel.OnGetAsync - ModelState is "Valid"
+2022-01-17 21:05:06.380 +00:00 [INF] (Ultimate.Fpl.Ui.Pages.MySquad.IndexModel) OnGetAsync invoked
+2022-01-17 21:05:06.384 +00:00 [INF] (Ultimate.Fpl.Ui.Services.SquadService) GetAsync invoked
+2022-01-17 21:05:06.388 +00:00 [INF] (Ultimate.Fpl.Ui.Services.DataService) GetAsync invoked
+2022-01-17 21:05:06.390 +00:00 [INF] (Ultimate.Fpl.Ui.Services.CacheService) GetDataAsync invoked
+2022-01-17 21:05:06.394 +00:00 [INF] (Fpl.Client.Clients.GeneralClient) GetDataAsync invoked
+2022-01-17 21:05:06.410 +00:00 [INF] (Fpl.Client.Clients.GeneralClient) GetAsync invoked
+2022-01-17 21:05:06.416 +00:00 [INF] (System.Net.Http.HttpClient.IGeneralClient.LogicalHandler) Start processing HTTP request GET "https://fantasy.premierleague.com/api/bootstrap-static/"
+2022-01-17 21:05:06.419 +00:00 [INF] (System.Net.Http.HttpClient.IGeneralClient.ClientHandler) Sending HTTP request GET "https://fantasy.premierleague.com/api/bootstrap-static/"
+2022-01-17 21:05:06.684 +00:00 [INF] (System.Net.Http.HttpClient.IGeneralClient.ClientHandler) Received HTTP response headers after 254.2873ms - 200
+2022-01-17 21:05:06.690 +00:00 [INF] (System.Net.Http.HttpClient.IGeneralClient.LogicalHandler) End processing HTTP request after 275.4432ms - 200
+2022-01-17 21:05:07.064 +00:00 [INF] (Ultimate.Fpl.Ui.Services.CacheService) SetDataAsync invoked
+2022-01-17 21:05:07.183 +00:00 [INF] (Ultimate.Fpl.Ui.Services.CacheService) GetDataAsync invoked
+2022-01-17 21:05:07.187 +00:00 [INF] (Fpl.Client.Clients.EntryClient) GetEventPicksAsync invoked
+2022-01-17 21:05:07.189 +00:00 [INF] (Fpl.Client.Clients.EntryClient) GetAsync invoked
+2022-01-17 21:05:07.191 +00:00 [INF] (System.Net.Http.HttpClient.IEntryClient.LogicalHandler) Start processing HTTP request GET "https://fantasy.premierleague.com/api/entry/5514/event/22/picks/"
+2022-01-17 21:05:07.195 +00:00 [INF] (System.Net.Http.HttpClient.IEntryClient.ClientHandler) Sending HTTP request GET "https://fantasy.premierleague.com/api/entry/5514/event/22/picks/"
+2022-01-17 21:05:07.225 +00:00 [INF] (System.Net.Http.HttpClient.IEntryClient.ClientHandler) Received HTTP response headers after 27.5726ms - 200
+2022-01-17 21:05:07.227 +00:00 [INF] (System.Net.Http.HttpClient.IEntryClient.LogicalHandler) End processing HTTP request after 36.121ms - 200
+2022-01-17 21:05:07.249 +00:00 [INF] (Ultimate.Fpl.Ui.Services.CacheService) SetDataAsync invoked
+2022-01-17 21:05:07.260 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executed handler method OnGetAsync, returned result .
+2022-01-17 21:05:07.263 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executing an implicit handler method - ModelState is "Valid"
+2022-01-17 21:05:07.266 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-01-17 21:05:07.376 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executed page /MySquad/Index in 1368.7475ms
+2022-01-17 21:05:07.379 +00:00 [INF] (Microsoft.AspNetCore.Routing.EndpointMiddleware) Executed endpoint '/MySquad/Index'
+2022-01-17 21:05:07.388 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/MySquad - - - 200 - text/html;+charset=utf-8 1408.2286ms
+2022-01-17 21:05:07.426 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - -
+2022-01-17 21:05:07.428 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - - - 200 11949 application/javascript;+charset=utf-8 2.0373ms
+2022-01-17 21:05:08.813 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/Players - -
+2022-01-17 21:05:08.823 +00:00 [INF] (Microsoft.AspNetCore.Routing.EndpointMiddleware) Executing endpoint '/Players/Index'
+2022-01-17 21:05:08.830 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Route matched with {page = "/Players/Index", area = "", action = "", controller = ""}. Executing page /Players/Index
+2022-01-17 21:05:08.836 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executing handler method Ultimate.Fpl.Ui.Pages.Players.IndexModel.OnGetAsync - ModelState is "Valid"

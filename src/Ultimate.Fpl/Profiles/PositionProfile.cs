@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using Fpl.Client.Models;
 using Ultimate.Fpl.Models;
 
 namespace Ultimate.Fpl.Profiles

@@ -7,7 +7,7 @@ namespace Ultimate.Fpl.Pages
     {
         public void OnGet()
         {
-            Log.Debug($"{nameof(OnGet)} invoked");
+            Log.ForContext<PrivacyModel>().Information($"{nameof(OnGet)} invoked");
         }
     }
 }

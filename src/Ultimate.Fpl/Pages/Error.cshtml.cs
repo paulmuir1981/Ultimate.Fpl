@@ -15,7 +15,7 @@ namespace Ultimate.Fpl.Pages
 
         public void OnGet()
         {
-            Log.Debug($"{nameof(OnGet)} invoked");
+            Log.ForContext<ErrorModel>().Information($"{nameof(OnGet)} invoked");
             RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
         }
     }

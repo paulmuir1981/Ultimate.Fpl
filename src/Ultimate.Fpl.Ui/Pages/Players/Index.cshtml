@@ -1,0 +1,875 @@
+﻿@page
+@model Ultimate.Fpl.Ui.Pages.Players.IndexModel
+@{
+    ViewData["Title"] = "Players";
+}
+
+<div class="text-center">
+    <h1 class="display-4">@ViewData["Title"]</h1>
+    <p>Statistics for players.</p>
+</div>
+
+<div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Toggle Columns
+            </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <div class="row">
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbValueSeason", new { @class = "toggle-vis", data_column = "6", })
+                        <label for="cbValueSeason" title="Value Season">@Html.DisplayNameFor(model => model.Players[0].ValueSeason)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbForm", new { @class = "toggle-vis", data_column = "7" })
+                        <label for="cbForm">@Html.DisplayNameFor(model => model.Players[0].Form)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbPointsPerGame", new { @class = "toggle-vis", data_column = "8" })
+                        <label for="cbPointsPerGame">@Html.DisplayNameFor(model => model.Players[0].PointsPerGame)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbPointsPerGameValue", new { @class = "toggle-vis", data_column = "9" })
+                        <label for="cbPointsPerGameValue">@Html.DisplayNameFor(model => model.Players[0].PointsPerGameValue)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbSelectedByPercent", new { @class = "toggle-vis", data_column = "10" })
+                        <label for="cbSelectedByPercent">@Html.DisplayNameFor(model => model.Players[0].SelectedByPercent)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbValueForm", new { @class = "toggle-vis", data_column = "11" })
+                        <label for="cbValueForm">@Html.DisplayNameFor(model => model.Players[0].ValueForm)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbInfluence", new { @class = "toggle-vis", data_column = "12" })
+                        <label for="cbInfluence">@Html.DisplayNameFor(model => model.Players[0].Influence)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbCreativity", new { @class = "toggle-vis", data_column = "13" })
+                        <label for="cbCreativity">@Html.DisplayNameFor(model => model.Players[0].Creativity)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbThreat", new { @class = "toggle-vis", data_column = "14" })
+                        <label for="cbThreat">@Html.DisplayNameFor(model => model.Players[0].Threat)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbIctIndex", new { @class = "toggle-vis", data_column = "15" })
+                        <label for="cbIctIndex">@Html.DisplayNameFor(model => model.Players[0].IctIndex)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbIctIndexValue", new { @class = "toggle-vis", data_column = "16" })
+                        <label for="cbIctIndexValue">@Html.DisplayNameFor(model => model.Players[0].IctIndexValue)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbCostChangeEvent", new { @class = "toggle-vis", data_column = "17" })
+                        <label for="cbCostChangeEvent">@Html.DisplayNameFor(model => model.Players[0].CostChangeEvent)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbCostChangeEventFall", new { @class = "toggle-vis", data_column = "18" })
+                        <label for="cbCostChangeEventFall">@Html.DisplayNameFor(model => model.Players[0].CostChangeEventFall)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbCostChangeStart", new { @class = "toggle-vis", data_column = "19" })
+                        <label for="cbCostChangeStart">@Html.DisplayNameFor(model => model.Players[0].CostChangeStart)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbCostChangeStartFall", new { @class = "toggle-vis", data_column = "20" })
+                        <label for="cbCostChangeStartFall">@Html.DisplayNameFor(model => model.Players[0].CostChangeStartFall)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbDreamteamCount", new { @class = "toggle-vis", data_column = "21" })
+                        <label for="cbDreamteamCount">@Html.DisplayNameFor(model => model.Players[0].DreamteamCount)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbEpNext", new { @class = "toggle-vis", data_column = "22" })
+                        <label for="cbEpNext">@Html.DisplayNameFor(model => model.Players[0].EpNext)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbEpThis", new { @class = "toggle-vis", data_column = "23" })
+                        <label for="cbEpThis">@Html.DisplayNameFor(model => model.Players[0].EpThis)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbEventPoints", new { @class = "toggle-vis", data_column = "24" })
+                        <label for="cbEventPoints">@Html.DisplayNameFor(model => model.Players[0].EventPoints)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbInDreamteam", new { @class = "toggle-vis", data_column = "25" })
+                        <label for="cbInDreamteam">@Html.DisplayNameFor(model => model.Players[0].InDreamteam)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbTransfersIn", new { @class = "toggle-vis", data_column = "26" })
+                        <label for="cbTransfersIn">@Html.DisplayNameFor(model => model.Players[0].TransfersIn)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbTransfersInEvent", new { @class = "toggle-vis", data_column = "27" })
+                        <label for="cbTransfersInEvent">@Html.DisplayNameFor(model => model.Players[0].TransfersInEvent)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbTransfersOut", new { @class = "toggle-vis", data_column = "28" })
+                        <label for="cbTransfersOut">@Html.DisplayNameFor(model => model.Players[0].TransfersOut)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbTransfersOutEvent", new { @class = "toggle-vis", data_column = "29" })
+                        <label for="cbTransfersOutEvent">@Html.DisplayNameFor(model => model.Players[0].TransfersOutEvent)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbMinutes", new { @class = "toggle-vis", data_column = "30" })
+                        <label for="cbMinutes">@Html.DisplayNameFor(model => model.Players[0].Minutes)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbPointsPerMinute", new { @class = "toggle-vis", data_column = "31" })
+                        <label for="cbPointsPerMinute">@Html.DisplayNameFor(model => model.Players[0].PointsPerMinute)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbGoalsScored", new { @class = "toggle-vis", data_column = "32" })
+                        <label for="cbGoalsScored">@Html.DisplayNameFor(model => model.Players[0].GoalsScored)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbAssists", new { @class = "toggle-vis", data_column = "33" })
+                        <label for="cbAssists">@Html.DisplayNameFor(model => model.Players[0].Assists)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbCleanSheets", new { @class = "toggle-vis", data_column = "34" })
+                        <label for="cbCleanSheets">@Html.DisplayNameFor(model => model.Players[0].CleanSheets)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbGoalsConceded", new { @class = "toggle-vis", data_column = "35" })
+                        <label for="cbGoalsConceded">@Html.DisplayNameFor(model => model.Players[0].GoalsConceded)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbOwnGoals", new { @class = "toggle-vis", data_column = "36" })
+                        <label for="cbOwnGoals">@Html.DisplayNameFor(model => model.Players[0].OwnGoals)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbPenaltiesSaved", new { @class = "toggle-vis", data_column = "37" })
+                        <label for="cbPenaltiesSaved">@Html.DisplayNameFor(model => model.Players[0].PenaltiesSaved)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbPenaltiesMissed", new { @class = "toggle-vis", data_column = "38" })
+                        <label for="cbPenaltiesMissed">@Html.DisplayNameFor(model => model.Players[0].PenaltiesMissed)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbYellowCards", new { @class = "toggle-vis", data_column = "39" })
+                        <label for="cbYellowCards">@Html.DisplayNameFor(model => model.Players[0].YellowCards)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbRedCards", new { @class = "toggle-vis", data_column = "40" })
+                        <label for="cbRedCards">@Html.DisplayNameFor(model => model.Players[0].RedCards)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbSaves", new { @class = "toggle-vis", data_column = "41" })
+                        <label for="cbSaves">@Html.DisplayNameFor(model => model.Players[0].Saves)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbBonus", new { @class = "toggle-vis", data_column = "42" })
+                        <label for="cbBonus">@Html.DisplayNameFor(model => model.Players[0].Bonus)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbBps", new { @class = "toggle-vis", data_column = "43" })
+                        <label for="cbBps">@Html.DisplayNameFor(model => model.Players[0].Bps)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbInfluenceRank", new { @class = "toggle-vis", data_column = "44" })
+                        <label for="cbInfluenceRank">@Html.DisplayNameFor(model => model.Players[0].InfluenceRank)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbInfluenceRankType", new { @class = "toggle-vis", data_column = "45" })
+                        <label for="cbInfluenceRankType">@Html.DisplayNameFor(model => model.Players[0].InfluenceRankType)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbCreativityRank", new { @class = "toggle-vis", data_column = "46" })
+                        <label for="cbCreativityRank">@Html.DisplayNameFor(model => model.Players[0].CreativityRank)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbCreativityRankType", new { @class = "toggle-vis", data_column = "47" })
+                        <label for="cbCreativityRankType">@Html.DisplayNameFor(model => model.Players[0].CreativityRankType)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbThreatRank", new { @class = "toggle-vis", data_column = "48" })
+                        <label for="cbThreatRank">@Html.DisplayNameFor(model => model.Players[0].ThreatRank)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbThreatRankType", new { @class = "toggle-vis", data_column = "49" })
+                        <label for="cbThreatRankType">@Html.DisplayNameFor(model => model.Players[0].ThreatRankType)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbIctIndexRank", new { @class = "toggle-vis", data_column = "50" })
+                        <label for="cbIctIndexRank">@Html.DisplayNameFor(model => model.Players[0].IctIndexRank)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbIctIndexRankType", new { @class = "toggle-vis", data_column = "51" })
+                        <label for="cbIctIndexRankType">@Html.DisplayNameFor(model => model.Players[0].IctIndexRankType)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbCornersAndIndirectFreekicksOrder", new { @class = "toggle-vis", data_column = "52" })
+                        <label for="cbCornersAndIndirectFreekicksOrder">@Html.DisplayNameFor(model => model.Players[0].CornersAndIndirectFreekicksOrder)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbDirectFreekicksOrder", new { @class = "toggle-vis", data_column = "53" })
+                        <label for="cbDirectFreekicksOrder">@Html.DisplayNameFor(model => model.Players[0].DirectFreekicksOrder)</label>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        @Html.CheckBox("cbPenaltiesOrder", new { @class = "toggle-vis", data_column = "54" })
+                        <label for="cbPenaltiesOrder">@Html.DisplayNameFor(model => model.Players[0].PenaltiesOrder)</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Filters
+            </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <div class="row">
+                    <div class="col-12">
+                        <h3>Position</h3>
+                    </div>
+                    <div class="col-12 col-md">
+                        @Html.CheckBox("cbPositionAll", true, new { @class = "toggle-position", data_position = "All" })
+                        <label for="cbPositionAll">All</label>
+                    </div>
+                    @foreach (var position in Model.Positions)
+                    {
+                        var id = "cbPosition" + position.Id;
+                        <div class="col-6 col-sm">
+                            @Html.CheckBox(id, true, new {@class = "toggle-position", data_position = position.Id})
+                            <label for="@id">@position.Name</label>
+                        </div>
+                    }
+                </div>
+                <div>
+                    <h3>Club</h3>
+                </div>
+                <div>
+                    @Html.CheckBox("cbClubAll", true, new { @class = "toggle-club", data_club = "All" })
+                    <label for="cbClubAll">All</label>
+                </div>
+                <div class="row row-cols-2 row-cols-sm-5">
+                    @{
+                        foreach (var club in Model.Clubs)
+                        {
+                            var id = "cbClub" + club.Id;
+                            @:<div class="col">
+                                @Html.CheckBox(id, true, new { @class = "toggle-club", data_club = club.Id })
+                                <label class="d-lg-none" title="@club.Name" for="@id">@club.ShortName</label>
+                                <label class="d-none d-lg-inline" for="@id">@club.Name</label>
+                            @:</div>
+                        }
+                    }
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h3>Price</h3>
+                        <div class="row">
+                            <div class="col">
+                                <label class="d-none d-lg-inline" for="selectMinPrice">Minimum:</label>
+                                <label class="d-lg-none" for="selectMinPrice">Min:</label>
+                                @Html.DropDownList("selectMinPrice", Model.MinPrices, null, new { @class = "select-price" })
+                            </div>
+                            <div class="col">
+                                <label class="d-none d-lg-inline" for="selectMaxPrice">Maximum:</label>
+                                <label class="d-lg-none" for="selectMaxPrice">Max:</label>
+                                @Html.DropDownList("selectMaxPrice", Model.MaxPrices, null, new { @class = "select-price" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h3>Availability</h3>
+                        <div class="row">
+                            <div class="col">
+                                <label class="d-none d-lg-inline" for="selectMinAvailability">Minimum:</label>
+                                <label class="d-lg-none" for="selectMinAvailability">Min:</label>
+                                @Html.DropDownList("selectMinAvailability", Model.MinAvailabilities, null, new { @class = "select-availability" })
+                            </div>
+                            <div class="col">
+                                <label class="d-none d-lg-inline" for="selectMaxAvailability">Maximum:</label>
+                                <label class="d-lg-none" for="selectMaxAvailability">Max:</label>
+                                @Html.DropDownList("selectMaxAvailability", Model.MaxAvailabilities, null, new { @class = "select-availability" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="text-center" id="divLoading">
+    <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+</div>
+<table class="table table-striped table-hover" id="tablePlayers" style="width: 100%; display: none;">
+    <thead>
+        <tr>
+            <th class="text-center">
+                @Html.DisplayNameFor(model => model.Players[0].Availability)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Players[0].WebName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Players[0].ClubShortName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Players[0].PositionShortName)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].Price)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].TotalPoints)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].ValueSeason)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].Form)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].PointsPerGame)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].PointsPerGameValue)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].SelectedByPercent)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].ValueForm)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].Influence)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].Creativity)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].Threat)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].IctIndex)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].IctIndexValue)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].CostChangeEvent)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].CostChangeEventFall)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].CostChangeStart)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].CostChangeStartFall)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].DreamteamCount)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].EpNext)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].EpThis)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].EventPoints)
+            </th>
+            <th class="text-center">
+                @Html.DisplayNameFor(model => model.Players[0].InDreamteam)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].TransfersIn)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].TransfersInEvent)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].TransfersOut)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].TransfersOutEvent)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].Minutes)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].PointsPerMinute)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].GoalsScored)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].Assists)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].CleanSheets)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].GoalsConceded)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].OwnGoals)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].PenaltiesSaved)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].PenaltiesMissed)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].YellowCards)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].RedCards)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].Saves)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].Bonus)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].Bps)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].InfluenceRank)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].InfluenceRankType)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].CreativityRank)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].CreativityRankType)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].ThreatRank)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].ThreatRankType)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].IctIndexRank)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].IctIndexRankType)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].CornersAndIndirectFreekicksOrder)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].DirectFreekicksOrder)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Players[0].PenaltiesOrder)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Players[0].ClubId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Players[0].PositionId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Players[0].Availability)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Players[0].WebNameDiacriticless)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Players[0].FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Players[0].FirstNameDiacriticless)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Players[0].SecondName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Players[0].SecondNameDiacriticless)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Players[0].FullName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Players[0].FullNameDiacriticless)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Players)
+        {
+            var availabilityClass = item.Availability switch
+            {
+                >= 100 => "text-green fas fa-check",
+                >= 75 => "text-yellow fas fa-exclamation-triangle",
+                >= 50 => "text-orange fas fa-exclamation-triangle",
+                >= 25 => "text-red fas fa-exclamation-triangle",
+                _ => "text-red fas fa-times"
+            };
+        <tr>
+            <td class="text-center" title="@item.AvailabilityText" data-order="@item.Availability">
+                <i class="@availabilityClass"></i>
+            </td>
+            <td title="@item.FullName">
+                @Html.DisplayFor(modelItem => item.WebName)
+            </td>
+            <td title="@item.ClubName">
+                @Html.DisplayFor(modelItem => item.ClubShortName)
+            </td>
+            <td title="@item.PositionName" data-order="@item.PositionId">
+                @Html.DisplayFor(modelItem => item.PositionShortName)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.TotalPoints)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.ValueSeason)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.Form)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.PointsPerGame)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.PointsPerGameValue)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.SelectedByPercent)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.ValueForm)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.Influence)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.Creativity)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.Threat)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.IctIndex)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.IctIndexValue)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.CostChangeEvent)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.CostChangeEventFall)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.CostChangeStart)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.CostChangeStartFall)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.DreamteamCount)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.EpNext)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.EpThis)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.EventPoints)
+            </td>
+            <td class="text-center">
+                @Html.DisplayFor(modelItem => item.InDreamteam)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.TransfersIn)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.TransfersInEvent)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.TransfersOut)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.TransfersOutEvent)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.Minutes)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.PointsPerMinute)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.GoalsScored)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.Assists)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.CleanSheets)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.GoalsConceded)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.OwnGoals)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.PenaltiesSaved)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.PenaltiesMissed)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.YellowCards)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.RedCards)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.Saves)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.Bonus)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.Bps)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.InfluenceRank)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.InfluenceRankType)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.CreativityRank)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.CreativityRankType)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.ThreatRank)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.ThreatRankType)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.IctIndexRank)
+            </td>
+            <td class="text-end">
+                @Html.DisplayFor(modelItem => item.IctIndexRankType)
+            </td>
+            <td class="text-end" data-order="@item.CornersAndIndirectFreekicksOrder.GetValueOrDefault(int.MaxValue)">
+                @Html.DisplayFor(modelItem => item.CornersAndIndirectFreekicksOrder)
+            </td>
+            <td class="text-end" data-order="@item.DirectFreekicksOrder.GetValueOrDefault(int.MaxValue)">
+                @Html.DisplayFor(modelItem => item.DirectFreekicksOrder)
+            </td>
+            <td class="text-end" data-order="@item.PenaltiesOrder.GetValueOrDefault(int.MaxValue)">
+                @Html.DisplayFor(modelItem => item.PenaltiesOrder)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClubId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PositionId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Availability)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WebNameDiacriticless)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstNameDiacriticless)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SecondName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SecondNameDiacriticless)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FullName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FullNameDiacriticless)
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+@section Scripts
+{
+    <script>
+        $(document).ready(function () {
+            var table = $('#tablePlayers').DataTable({
+                "colReorder": true,
+                "order": [[5, "desc"]],
+                "lengthMenu": [[20, 50, 100, -1], [20, 50, 100, "All"]],
+                "pageLength": 20,
+                "responsive": true,
+                "initComplete": function (settings, json) {
+                    $('#divLoading').hide();
+                    $('#tablePlayers').show();
+                    var positionColumn = this.api().columns().column(56);
+                    var clubColumn = this.api().columns().column(55);
+                    var priceColumn = this.api().columns().column(4);
+                    var availabilityColumn = this.api().columns().column(57);
+
+                    $('input.toggle-position').change(function (e) {
+                        e.preventDefault();
+                        var regEx = '';
+                        var position = $(this).attr('data-position');
+                        switch (position) {
+                            case "All":
+                                var allChecked = $(this).prop('checked');
+                                $('input.toggle-position').prop('checked', allChecked);
+
+                                if (!allChecked) {
+                                    regEx = '^(?!x)x$';
+                                }
+                                break;
+                            default:
+                                $('#cbPositionAll').prop('checked', false);
+                                var checked = $('input.toggle-position:checked');
+                                var numberOfChecked = checked.length;
+                                if (numberOfChecked == 4) {
+                                    $('#cbPositionAll').prop('checked', true);
+                                }
+                                else if (numberOfChecked == 0) {
+                                    regEx = '^(?!x)x$';
+                                }
+                                else {
+                                    var first = true;
+                                    checked.each(function () {
+                                        if (first) {
+                                            first = false;
+                                        }
+                                        else {
+                                            regEx += '|';
+                                        }
+                                        regEx += '^' + $(this).attr('data-position') + '$';
+                                    });
+                                }
+                        }
+                        positionColumn.search(regEx, true, false).draw();
+                    });
+
+                    $('input.toggle-club').change(function (e) {
+                        e.preventDefault();
+                        var regEx = '';
+                        var club = $(this).attr('data-club');
+                        switch (club) {
+                            case "All":
+                                var allChecked = $(this).prop('checked');
+                                $('input.toggle-club').prop('checked', allChecked);
+
+                                if (!allChecked) {
+                                    regEx = '^(?!x)x$';
+                                }
+                                break;
+                            default:
+                                $('#cbClubAll').prop('checked', false);
+                                var checked = $('input.toggle-club:checked');
+                                var numberOfChecked = checked.length;
+                                if (numberOfChecked == 20) {
+                                    $('#cbClubAll').prop('checked', true);
+                                }
+                                else if (numberOfChecked == 0) {
+                                    regEx = '^(?!x)x$';
+                                }
+                                else {
+                                    var first = true;
+                                    checked.each(function () {
+                                        if (first) {
+                                            first = false;
+                                        }
+                                        else {
+                                            regEx += '|';
+                                        }
+                                        regEx += '^' + $(this).attr('data-club') + '$';
+                                    });
+                                }
+                        }
+                        clubColumn.search(regEx, true, false).draw();
+                    });
+
+                    $('select.select-availability').change(function (e) {
+                        e.preventDefault();
+                        var min = parseInt($('#selectMinAvailability').val());
+                        var max = parseInt($('#selectMaxAvailability').val());
+
+                        var regEx = '';
+                        if (min > max) {
+                            regEx = '^(?!x)x$';
+                        }
+                        else {
+                            regEx = '^' + min + '$';
+
+                            for (var availability = min + 25; availability <= max; availability += 25) {
+                                regEx += '|^' + availability + '$';
+                            }
+                        }
+                        availabilityColumn.search(regEx, true, false).draw();
+                    });
+
+                    $('select.select-price').change(function (e) {
+                        e.preventDefault();
+                        var minPrice = parseFloat($('#selectMinPrice').val());
+                        var maxPrice = parseFloat($('#selectMaxPrice').val());
+
+                        var regEx = '';
+                        if (minPrice > maxPrice) {
+                            regEx = '^(?!x)x$';
+                        }
+                        else {
+                            regEx = '^' + minPrice.toFixed(1) + '$';
+
+                            for (var price = minPrice + 0.1; price <= maxPrice; price += 0.1) {
+                                regEx += '|^' + price.toFixed(1) + '$';
+                            }
+                        }
+                        priceColumn.search(regEx, true, false).draw();
+                    });
+                }
+            });
+
+            var columnsToHide = [];
+
+            for (var i = 6; i < table.columns().count(); i++) {
+                columnsToHide.push(i);
+            }
+
+            table.columns(columnsToHide).visible(false, false);
+            table.columns.adjust().draw(false); // adjust column sizing and redraw
+
+            $('input.toggle-vis').change(function (e) {
+                e.preventDefault();
+
+                // Get the column API object
+                var column = table.column($(this).attr('data-column'));
+
+                // Toggle the visibility
+                column.visible(!column.visible());
+            });
+        });
+    </script>
+}

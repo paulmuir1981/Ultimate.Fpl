@@ -3,7 +3,6 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using AutoMapper;
-using Fpl.Client.Clients;
 using Serilog;
 using Ultimate.Fpl.Models;
 
@@ -24,7 +23,7 @@ namespace Ultimate.Fpl.Services
 
         public async Task<Data> GetAsync(CancellationToken cancellationToken = default)
         {
-            Log.Debug($"{nameof(GetAsync)} invoked");
+            Log.Information($"{nameof(GetAsync)} invoked");
             var result = await _cacheService.GetDataAsync(cancellationToken);
 
             if (result == null)

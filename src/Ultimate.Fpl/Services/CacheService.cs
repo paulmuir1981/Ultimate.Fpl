@@ -24,13 +24,13 @@ namespace Ultimate.Fpl.Services
 
         public Task<Data> GetDataAsync(CancellationToken cancellationToken = default)
         {
-            Log.Debug($"{nameof(GetDataAsync)} invoked");
+            Log.Information($"{nameof(GetDataAsync)} invoked");
             return _cache.GetAsync<Data>(Keys.Data, cancellationToken);
         }
 
         public Task SetDataAsync(Data data, CancellationToken cancellationToken = default)
         {
-            Log.Debug($"{nameof(SetDataAsync)} invoked");
+            Log.Information($"{nameof(SetDataAsync)} invoked");
             return _cache.SetAsync(Keys.Data, data, _options, cancellationToken);
         }
     }

@@ -1,0 +1,116 @@
+﻿@page
+@model Ultimate.Fpl.Ui.Pages.MyTeam.IndexModel
+@{
+    ViewData["Title"] = "My Team";
+}
+
+<div class="text-center">
+    <h1 class="display-4">@ViewData["Title"]</h1>
+    <p>Your current team.</p>
+</div>
+
+<div class="text-center" id="divLoading">
+    <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+</div>
+<div class="row">
+    <div class="col-4">
+        <a asp-page="./Index"
+            asp-route-eventId="@(Model.EntryEventPicks.EventId - 1)"
+            class="btn btn-primary disabled">Previous
+        </a>
+    </div>
+    <div class="col-4 text-center">Gameweek @Model.EntryEventPicks.EventId</div>
+    <div class="col-4 text-end">
+        <a asp-page="./Index"
+            asp-route-eventId="@(Model.EntryEventPicks.EventId + 1)"
+            class="btn btn-primary disabled">Next
+        </a>
+    </div>
+
+    <div class="col-3">Points: @Model.EntryEventPicks.Points</div>
+    <div class="col-3">Total Points: @Model.EntryEventPicks.TotalPoints</div>
+    <div class="col-3">Rank: @Model.EntryEventPicks.Rank</div>
+    <div class="col-3">Overall Rank: @Model.EntryEventPicks.OverallRank</div>
+
+    <div class="col-4">Chip: @Model.EntryEventPicks.ActiveChip</div>
+    <div class="col-4">Value: @Model.EntryEventPicks.Value</div>
+    <div class="col-4">Bank: @Model.EntryEventPicks.Bank</div>
+
+    <div class="col-4">Transfer Count: @Model.EntryEventPicks.TransferCount</div>
+    <div class="col-4">Transfer Cost: @Model.EntryEventPicks.TransferCost</div>
+    <div class="col-4">Bench Points: @Model.EntryEventPicks.PointsOnBench</div>
+</div>
+<table class="table table-striped table-hover" id="tableTeam" style="width: 100%; display: none;">
+    <thead>
+        <tr>
+            <th class="text-center">
+                @Html.DisplayNameFor(model => model.EntryEventPicks.Picks[0].IsStarter)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EntryEventPicks.Picks[0].DisplayName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EntryEventPicks.Picks[0].ClubShortName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EntryEventPicks.Picks[0].PositionShortName)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.EntryEventPicks.Picks[0].Price)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.EntryEventPicks.Picks[0].EventPoints)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.EntryEventPicks.Picks[0].Points)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var player in Model.EntryEventPicks.Picks)
+        {
+            <tr>
+                <td title="@player.Ordinal" class="text-center" data-order="@player.Ordinal">
+                    @Html.DisplayFor(modelItem => player.IsStarter)
+                </td>
+                <td title="@player.FullName">
+                    @Html.DisplayFor(modelItem => player.DisplayName)
+                </td>
+                <td title="@player.ClubName">
+                    @Html.DisplayFor(modelItem => player.ClubShortName)
+                </td>
+                <td title="@player.PositionName" data-order="@player.PositionId">
+                    @Html.DisplayFor(modelItem => player.PositionShortName)
+                </td>
+                <td class="text-end">
+                    @Html.DisplayFor(modelItem => player.Price)
+                </td>
+                <td class="text-end">
+                    @Html.DisplayFor(modelItem => player.EventPoints)
+                </td>
+                <td class="text-end">
+                    @Html.DisplayFor(modelItem => player.Points)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts{
+    <script>
+        $(document).ready(function() {
+            var table = $('#tableTeam').DataTable({
+                "colReorder": true,
+                "paging": false,
+                "searching": false,
+                "info": false,
+                "initComplete": function (settings, json) {
+                    $('#divLoading').hide();
+                    $('#tableTeam').show();
+                }
+            });
+        });
+    </script>
+}

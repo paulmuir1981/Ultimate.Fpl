@@ -12,6 +12,7 @@ namespace Ultimate.Fpl.Pages
     public class PlayersModel : PageModel
     {
         private readonly IDataService _dataService;
+        private readonly ILogger _logger;
         public List<Player> Players;
         public List<Club> Clubs;
         public List<Position> Positions;
@@ -23,11 +24,12 @@ namespace Ultimate.Fpl.Pages
         public PlayersModel(IDataService dataService)
         {
             _dataService = dataService;
+            _logger = Log.ForContext<PlayersModel>();
         }
 
         public async Task OnGetAsync()
         {
-            Log.Debug($"{nameof(OnGetAsync)} invoked");
+            _logger.Information($"{nameof(OnGetAsync)} invoked");
             var data = await _dataService.GetAsync();
             Players = data.Players;
             Clubs = data.Clubs;

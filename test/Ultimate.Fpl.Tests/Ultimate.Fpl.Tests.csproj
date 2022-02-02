@@ -20,8 +20,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\src\Ultimate.Fpl\Ultimate.Fpl.csproj" />
-  </ItemGroup>
-
 </Project>

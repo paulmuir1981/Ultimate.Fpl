@@ -7,7 +7,7 @@ namespace Ultimate.Fpl.Pages
     {
         public void OnGet()
         {
-            Log.Debug($"{nameof(OnGet)} invoked");
+            Log.ForContext<IndexModel>().Information($"{nameof(OnGet)} invoked");
         }
     }
 }

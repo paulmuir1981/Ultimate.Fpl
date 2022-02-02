@@ -1,0 +1,17 @@
+﻿@using Ultimate.Fpl.Ui.Services
+@inject IEntryService teamService
+<ul class="navbar-nav">
+@if (((string)ViewData["Title"]) != "Clear My Team" && teamService.MyEntryId > 0)
+{
+        <span class="navbar-text text-dark">Hello @teamService.MyEntryPlayerName!</span>
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="" asp-page="/MyTeam/Clear">Clear My Team</a>
+        </li>
+}
+else if (((string)ViewData["Title"]) != "Set My Team")
+{
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="" asp-page="/MyTeam/Set">Set My Team</a>
+        </li>
+}
+</ul>

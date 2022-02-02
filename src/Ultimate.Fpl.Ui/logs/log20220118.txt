@@ -1,0 +1,312 @@
+2022-01-18 20:37:08.415 +00:00 [INF] (Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager) User profile is available. Using 'C:\Users\paulm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-01-18 20:37:08.914 +00:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: https://localhost:7256
+2022-01-18 20:37:08.915 +00:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: http://localhost:5256
+2022-01-18 20:37:08.916 +00:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2022-01-18 20:37:08.916 +00:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: Development
+2022-01-18 20:37:08.917 +00:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: C:\Users\paulm\OneDrive\Documents\GitHub\Ultimate.Fpl\src\Ultimate.Fpl.Ui\
+2022-01-18 20:37:09.766 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/ - -
+2022-01-18 20:37:10.083 +00:00 [INF] (Microsoft.AspNetCore.Routing.EndpointMiddleware) Executing endpoint '/Index'
+2022-01-18 20:37:10.139 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Route matched with {page = "/Index", area = "", action = "", controller = ""}. Executing page /Index
+2022-01-18 20:37:10.151 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executing handler method Ultimate.Fpl.Ui.Pages.IndexModel.OnGet - ModelState is "Valid"
+2022-01-18 20:37:10.156 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executed handler method OnGet, returned result .
+2022-01-18 20:37:10.160 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executing an implicit handler method - ModelState is "Valid"
+2022-01-18 20:37:10.162 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-01-18 20:37:10.339 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executed page /Index in 193.3628ms
+2022-01-18 20:37:10.342 +00:00 [INF] (Microsoft.AspNetCore.Routing.EndpointMiddleware) Executed endpoint '/Index'
+2022-01-18 20:37:10.362 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/ - - - 200 - text/html;+charset=utf-8 600.3804ms
+2022-01-18 20:37:10.390 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/Ultimate.Fpl.Ui.styles.css?v=kRjc9xKV6cA0cFn_zncwxIul0O-zTD6Y81mr-5kr2DU - -
+2022-01-18 20:37:10.391 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/lib/jquery/dist/jquery.min.js - -
+2022-01-18 20:37:10.390 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/css/site.css?v=juqV8I1DeVs3ycwz4c0gy-3agg8ObuDJb5Y_CUfN-BE - -
+2022-01-18 20:37:10.390 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+2022-01-18 20:37:10.394 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/lib/bootstrap/dist/css/bootstrap.min.css - -
+2022-01-18 20:37:10.394 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - -
+2022-01-18 20:37:10.398 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - - - 200 11949 application/javascript;+charset=utf-8 3.9160ms
+2022-01-18 20:37:10.404 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - -
+2022-01-18 20:37:10.413 +00:00 [INF] (Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware) The file /lib/bootstrap/dist/js/bootstrap.bundle.min.js was not modified
+2022-01-18 20:37:10.413 +00:00 [INF] (Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware) The file /Ultimate.Fpl.Ui.styles.css was not modified
+2022-01-18 20:37:10.413 +00:00 [INF] (Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware) The file /lib/bootstrap/dist/css/bootstrap.min.css was not modified
+2022-01-18 20:37:10.413 +00:00 [INF] (Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware) The file /css/site.css was not modified
+2022-01-18 20:37:10.413 +00:00 [INF] (Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware) The file /lib/jquery/dist/jquery.min.js was not modified
+2022-01-18 20:37:10.413 +00:00 [INF] (Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware) The file /js/site.js was not modified
+2022-01-18 20:37:10.414 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 304 - application/javascript 23.8743ms
+2022-01-18 20:37:10.415 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/Ultimate.Fpl.Ui.styles.css?v=kRjc9xKV6cA0cFn_zncwxIul0O-zTD6Y81mr-5kr2DU - - - 304 - text/css 26.6923ms
+2022-01-18 20:37:10.419 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/lib/jquery/dist/jquery.min.js - - - 304 - application/javascript 28.7197ms
+2022-01-18 20:37:10.420 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 304 - application/javascript 19.1285ms
+2022-01-18 20:37:10.418 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/css/site.css?v=juqV8I1DeVs3ycwz4c0gy-3agg8ObuDJb5Y_CUfN-BE - - - 304 - text/css 27.4983ms
+2022-01-18 20:37:10.416 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/lib/bootstrap/dist/css/bootstrap.min.css - - - 304 - text/css 22.7628ms
+2022-01-18 20:37:18.566 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/MicrosoftIdentity/Account/SignOut - -
+2022-01-18 20:37:18.574 +00:00 [INF] (Microsoft.AspNetCore.Routing.EndpointMiddleware) Executing endpoint 'Microsoft.Identity.Web.UI.Areas.MicrosoftIdentity.Controllers.AccountController.SignOut (Microsoft.Identity.Web.UI)'
+2022-01-18 20:37:18.607 +00:00 [INF] (Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker) Route matched with {area = "MicrosoftIdentity", action = "SignOut", controller = "Account", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SignOut(System.String) on controller Microsoft.Identity.Web.UI.Areas.MicrosoftIdentity.Controllers.AccountController (Microsoft.Identity.Web.UI).
+2022-01-18 20:37:18.638 +00:00 [INF] (Microsoft.AspNetCore.Mvc.SignOutResult) Executing SignOutResult with authentication schemes (["Cookies","OpenIdConnect"]).
+2022-01-18 20:37:18.654 +00:00 [INF] (Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler) AuthenticationScheme: Cookies signed out.
+2022-01-18 20:37:19.465 +00:00 [INF] (Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler) AuthenticationScheme: OpenIdConnect signed out.
+2022-01-18 20:37:19.470 +00:00 [INF] (Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker) Executed action Microsoft.Identity.Web.UI.Areas.MicrosoftIdentity.Controllers.AccountController.SignOut (Microsoft.Identity.Web.UI) in 858.5996ms
+2022-01-18 20:37:19.473 +00:00 [INF] (Microsoft.AspNetCore.Routing.EndpointMiddleware) Executed endpoint 'Microsoft.Identity.Web.UI.Areas.MicrosoftIdentity.Controllers.AccountController.SignOut (Microsoft.Identity.Web.UI)'
+2022-01-18 20:37:19.475 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/MicrosoftIdentity/Account/SignOut - - - 302 0 - 908.4439ms
+2022-01-18 20:37:47.163 +00:00 [INF] (Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager) User profile is available. Using 'C:\Users\paulm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-01-18 20:37:47.587 +00:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: https://localhost:7256
+2022-01-18 20:37:47.589 +00:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: http://localhost:5256
+2022-01-18 20:37:47.596 +00:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2022-01-18 20:37:47.598 +00:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: Development
+2022-01-18 20:37:47.599 +00:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: C:\Users\paulm\OneDrive\Documents\GitHub\Ultimate.Fpl\src\Ultimate.Fpl.Ui\
+2022-01-18 20:37:48.551 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/ - -
+2022-01-18 20:37:48.695 +00:00 [INF] (Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler) OpenIdConnect was not authenticated. Failure message: Not authenticated
+2022-01-18 20:37:48.704 +00:00 [INF] (Microsoft.AspNetCore.Authorization.DefaultAuthorizationService) Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-01-18 20:37:49.226 +00:00 [INF] (Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler) AuthenticationScheme: OpenIdConnect was challenged.
+2022-01-18 20:37:49.233 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/ - - - 302 0 - 691.7113ms
+2022-01-18 20:38:51.487 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 POST https://localhost:7256/signin-oidc application/x-www-form-urlencoded 2159
+2022-01-18 20:38:51.723 +00:00 [INF] (Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler) AuthenticationScheme: Cookies signed in.
+2022-01-18 20:38:51.727 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 POST https://localhost:7256/signin-oidc application/x-www-form-urlencoded 2159 - 302 0 - 239.2618ms
+2022-01-18 20:38:51.731 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/ - -
+2022-01-18 20:38:51.742 +00:00 [INF] (Microsoft.AspNetCore.Routing.EndpointMiddleware) Executing endpoint '/Index'
+2022-01-18 20:38:51.758 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Route matched with {page = "/Index", area = "", action = "", controller = ""}. Executing page /Index
+2022-01-18 20:38:51.772 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executing handler method Ultimate.Fpl.Ui.Pages.IndexModel.OnGet - ModelState is "Valid"
+2022-01-18 20:38:51.778 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executed handler method OnGet, returned result .
+2022-01-18 20:38:51.790 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executing an implicit handler method - ModelState is "Valid"
+2022-01-18 20:38:51.795 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-01-18 20:38:52.090 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executed page /Index in 317.3592ms
+2022-01-18 20:38:52.096 +00:00 [INF] (Microsoft.AspNetCore.Routing.EndpointMiddleware) Executed endpoint '/Index'
+2022-01-18 20:38:52.118 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/ - - - 200 - text/html;+charset=utf-8 386.9510ms
+2022-01-18 20:38:52.159 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - -
+2022-01-18 20:38:52.169 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - - - 200 11949 application/javascript;+charset=utf-8 13.2604ms
+2022-01-18 20:39:01.107 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/MySquad - -
+2022-01-18 20:39:01.113 +00:00 [INF] (Microsoft.AspNetCore.Routing.EndpointMiddleware) Executing endpoint '/MySquad/Index'
+2022-01-18 20:39:01.119 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Route matched with {page = "/MySquad/Index", area = "", action = "", controller = ""}. Executing page /MySquad/Index
+2022-01-18 20:39:01.505 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executing handler method Ultimate.Fpl.Ui.Pages.MySquad.IndexModel.OnGetAsync - ModelState is "Valid"
+2022-01-18 20:39:01.510 +00:00 [INF] (Ultimate.Fpl.Ui.Pages.MySquad.IndexModel) OnGetAsync invoked
+2022-01-18 20:39:01.516 +00:00 [INF] (Ultimate.Fpl.Ui.Services.SquadService) GetAsync invoked
+2022-01-18 20:39:01.520 +00:00 [INF] (Ultimate.Fpl.Ui.Services.DataService) GetAsync invoked
+2022-01-18 20:39:01.521 +00:00 [INF] (Ultimate.Fpl.Ui.Services.CacheService) GetDataAsync invoked
+2022-01-18 20:39:01.525 +00:00 [INF] (Fpl.Client.Clients.GeneralClient) GetDataAsync invoked
+2022-01-18 20:39:01.547 +00:00 [INF] (Fpl.Client.Clients.GeneralClient) GetAsync invoked
+2022-01-18 20:39:01.555 +00:00 [INF] (System.Net.Http.HttpClient.IGeneralClient.LogicalHandler) Start processing HTTP request GET "https://fantasy.premierleague.com/api/bootstrap-static/"
+2022-01-18 20:39:01.563 +00:00 [INF] (System.Net.Http.HttpClient.IGeneralClient.ClientHandler) Sending HTTP request GET "https://fantasy.premierleague.com/api/bootstrap-static/"
+2022-01-18 20:39:01.809 +00:00 [INF] (System.Net.Http.HttpClient.IGeneralClient.ClientHandler) Received HTTP response headers after 233.4277ms - 200
+2022-01-18 20:39:01.814 +00:00 [INF] (System.Net.Http.HttpClient.IGeneralClient.LogicalHandler) End processing HTTP request after 262.2315ms - 200
+2022-01-18 20:39:02.205 +00:00 [INF] (Ultimate.Fpl.Ui.Services.CacheService) SetDataAsync invoked
+2022-01-18 20:39:02.331 +00:00 [INF] (Ultimate.Fpl.Ui.Services.CacheService) GetDataAsync invoked
+2022-01-18 20:39:02.337 +00:00 [INF] (Fpl.Client.Clients.EntryClient) GetEventPicksAsync invoked
+2022-01-18 20:39:02.339 +00:00 [INF] (Fpl.Client.Clients.EntryClient) GetAsync invoked
+2022-01-18 20:39:02.340 +00:00 [INF] (System.Net.Http.HttpClient.IEntryClient.LogicalHandler) Start processing HTTP request GET "https://fantasy.premierleague.com/api/entry/5514/event/22/picks/"
+2022-01-18 20:39:02.342 +00:00 [INF] (System.Net.Http.HttpClient.IEntryClient.ClientHandler) Sending HTTP request GET "https://fantasy.premierleague.com/api/entry/5514/event/22/picks/"
+2022-01-18 20:39:02.369 +00:00 [INF] (System.Net.Http.HttpClient.IEntryClient.ClientHandler) Received HTTP response headers after 25.1589ms - 200
+2022-01-18 20:39:02.374 +00:00 [INF] (System.Net.Http.HttpClient.IEntryClient.LogicalHandler) End processing HTTP request after 34.8026ms - 200
+2022-01-18 20:39:02.399 +00:00 [INF] (Ultimate.Fpl.Ui.Services.CacheService) SetDataAsync invoked
+2022-01-18 20:39:02.407 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executed handler method OnGetAsync, returned result .
+2022-01-18 20:39:02.411 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executing an implicit handler method - ModelState is "Valid"
+2022-01-18 20:39:02.415 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-01-18 20:39:02.556 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executed page /MySquad/Index in 1435.784ms
+2022-01-18 20:39:02.561 +00:00 [INF] (Microsoft.AspNetCore.Routing.EndpointMiddleware) Executed endpoint '/MySquad/Index'
+2022-01-18 20:39:02.575 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/MySquad - - - 200 - text/html;+charset=utf-8 1467.9394ms
+2022-01-18 20:39:02.647 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - -
+2022-01-18 20:39:02.652 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - - - 200 11949 application/javascript;+charset=utf-8 5.1511ms
+2022-01-18 21:38:35.180 +00:00 [INF] (Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager) User profile is available. Using 'C:\Users\paulm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-01-18 21:38:35.520 +00:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: https://localhost:7256
+2022-01-18 21:38:35.522 +00:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: http://localhost:5256
+2022-01-18 21:38:35.523 +00:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2022-01-18 21:38:35.525 +00:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: Development
+2022-01-18 21:38:35.527 +00:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: C:\Users\paulm\OneDrive\Documents\GitHub\Ultimate.Fpl\src\Ultimate.Fpl.Ui\
+2022-01-18 21:38:36.633 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/ - -
+2022-01-18 21:38:36.830 +00:00 [INF] (Microsoft.AspNetCore.Routing.EndpointMiddleware) Executing endpoint '/Index'
+2022-01-18 21:38:36.864 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Route matched with {page = "/Index", area = "", action = "", controller = ""}. Executing page /Index
+2022-01-18 21:38:36.876 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executing handler method Ultimate.Fpl.Ui.Pages.IndexModel.OnGet - ModelState is "Valid"
+2022-01-18 21:38:36.881 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executed handler method OnGet, returned result .
+2022-01-18 21:38:36.891 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executing an implicit handler method - ModelState is "Valid"
+2022-01-18 21:38:36.893 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-01-18 21:38:37.048 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executed page /Index in 178.9994ms
+2022-01-18 21:38:37.052 +00:00 [INF] (Microsoft.AspNetCore.Routing.EndpointMiddleware) Executed endpoint '/Index'
+2022-01-18 21:38:37.067 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/ - - - 200 - text/html;+charset=utf-8 439.1150ms
+2022-01-18 21:38:37.135 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - -
+2022-01-18 21:38:37.139 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - - - 200 11949 application/javascript;+charset=utf-8 4.1901ms
+2022-01-18 21:40:37.708 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/ - -
+2022-01-18 21:40:37.715 +00:00 [INF] (Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler) OpenIdConnect was not authenticated. Failure message: Not authenticated
+2022-01-18 21:40:37.719 +00:00 [INF] (Microsoft.AspNetCore.Authorization.DefaultAuthorizationService) Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-01-18 21:40:38.483 +00:00 [INF] (Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler) AuthenticationScheme: OpenIdConnect was challenged.
+2022-01-18 21:40:38.488 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/ - - - 302 0 - 779.6771ms
+2022-01-18 21:41:43.274 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 POST https://localhost:7256/signin-oidc application/x-www-form-urlencoded 2159
+2022-01-18 21:41:43.521 +00:00 [INF] (Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler) AuthenticationScheme: Cookies signed in.
+2022-01-18 21:41:43.523 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 POST https://localhost:7256/signin-oidc application/x-www-form-urlencoded 2159 - 302 0 - 249.3346ms
+2022-01-18 21:41:43.534 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/ - -
+2022-01-18 21:41:43.537 +00:00 [INF] (Microsoft.AspNetCore.Routing.EndpointMiddleware) Executing endpoint '/Index'
+2022-01-18 21:41:43.539 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Route matched with {page = "/Index", area = "", action = "", controller = ""}. Executing page /Index
+2022-01-18 21:41:43.541 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executing handler method Ultimate.Fpl.Ui.Pages.IndexModel.OnGet - ModelState is "Valid"
+2022-01-18 21:41:43.543 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executed handler method OnGet, returned result .
+2022-01-18 21:41:43.545 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executing an implicit handler method - ModelState is "Valid"
+2022-01-18 21:41:43.547 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-01-18 21:41:43.568 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executed page /Index in 26.8771ms
+2022-01-18 21:41:43.570 +00:00 [INF] (Microsoft.AspNetCore.Routing.EndpointMiddleware) Executed endpoint '/Index'
+2022-01-18 21:41:43.573 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/ - - - 200 - text/html;+charset=utf-8 39.2112ms
+2022-01-18 21:41:43.606 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/lib/bootstrap/dist/css/bootstrap.min.css - -
+2022-01-18 21:41:43.666 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/css/site.css?v=juqV8I1DeVs3ycwz4c0gy-3agg8ObuDJb5Y_CUfN-BE - -
+2022-01-18 21:41:43.676 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+2022-01-18 21:41:43.676 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/lib/jquery/dist/jquery.min.js - -
+2022-01-18 21:41:43.672 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/Ultimate.Fpl.Ui.styles.css?v=kRjc9xKV6cA0cFn_zncwxIul0O-zTD6Y81mr-5kr2DU - -
+2022-01-18 21:41:43.691 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - -
+2022-01-18 21:41:43.710 +00:00 [INF] (Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware) Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Users\paulm\OneDrive\Documents\GitHub\Ultimate.Fpl\src\Ultimate.Fpl.Ui\wwwroot\lib\jquery\dist\jquery.min.js'
+2022-01-18 21:41:43.710 +00:00 [INF] (Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware) Sending file. Request path: '/Ultimate.Fpl.Ui.styles.css'. Physical path: 'C:\Users\paulm\OneDrive\Documents\GitHub\Ultimate.Fpl\src\Ultimate.Fpl.Ui\obj\Debug\net6.0\scopedcss\bundle\Ultimate.Fpl.Ui.styles.css'
+2022-01-18 21:41:43.712 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/lib/jquery/dist/jquery.min.js - - - 200 89476 application/javascript 36.3844ms
+2022-01-18 21:41:43.710 +00:00 [INF] (Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware) Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\paulm\OneDrive\Documents\GitHub\Ultimate.Fpl\src\Ultimate.Fpl.Ui\wwwroot\js\site.js'
+2022-01-18 21:41:43.710 +00:00 [INF] (Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware) Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\paulm\OneDrive\Documents\GitHub\Ultimate.Fpl\src\Ultimate.Fpl.Ui\wwwroot\css\site.css'
+2022-01-18 21:41:43.710 +00:00 [INF] (Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware) Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Users\paulm\OneDrive\Documents\GitHub\Ultimate.Fpl\src\Ultimate.Fpl.Ui\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+2022-01-18 21:41:43.714 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/Ultimate.Fpl.Ui.styles.css?v=kRjc9xKV6cA0cFn_zncwxIul0O-zTD6Y81mr-5kr2DU - - - 200 1132 text/css 42.5588ms
+2022-01-18 21:41:43.713 +00:00 [INF] (Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware) Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\paulm\OneDrive\Documents\GitHub\Ultimate.Fpl\src\Ultimate.Fpl.Ui\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2022-01-18 21:41:43.719 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 200 230 application/javascript 27.7685ms
+2022-01-18 21:41:43.720 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/css/site.css?v=juqV8I1DeVs3ycwz4c0gy-3agg8ObuDJb5Y_CUfN-BE - - - 200 457 text/css 54.2976ms
+2022-01-18 21:41:43.721 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78468 application/javascript 45.5031ms
+2022-01-18 21:41:43.722 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - -
+2022-01-18 21:41:43.724 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 162720 text/css 118.8281ms
+2022-01-18 21:41:43.730 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - - - 200 11949 application/javascript;+charset=utf-8 7.7939ms
+2022-01-18 21:41:43.941 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/favicon.ico - -
+2022-01-18 21:41:43.946 +00:00 [INF] (Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware) Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\paulm\OneDrive\Documents\GitHub\Ultimate.Fpl\src\Ultimate.Fpl.Ui\wwwroot\favicon.ico'
+2022-01-18 21:41:43.948 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/favicon.ico - - - 200 5430 image/x-icon 6.7244ms
+2022-01-18 23:10:55.727 +00:00 [INF] (Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager) User profile is available. Using 'C:\Users\paulm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-01-18 23:10:56.147 +00:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: https://localhost:7256
+2022-01-18 23:10:56.148 +00:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: http://localhost:5256
+2022-01-18 23:10:56.149 +00:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2022-01-18 23:10:56.150 +00:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: Development
+2022-01-18 23:10:56.152 +00:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: C:\Users\paulm\OneDrive\Documents\GitHub\Ultimate.Fpl\src\Ultimate.Fpl.Ui\
+2022-01-18 23:10:57.176 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/ - -
+2022-01-18 23:10:57.236 +00:00 [INF] (Microsoft.AspNetCore.Authorization.DefaultAuthorizationService) Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-01-18 23:10:57.242 +00:00 [ERR] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware) An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-01-18 23:10:57.360 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/ - - - 500 - text/html;+charset=utf-8 188.5884ms
+2022-01-18 23:10:57.381 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - -
+2022-01-18 23:10:57.383 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - - - 200 11949 application/javascript;+charset=utf-8 2.4142ms
+2022-01-18 23:11:55.764 +00:00 [INF] (Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager) User profile is available. Using 'C:\Users\paulm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-01-18 23:11:56.049 +00:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: https://localhost:7256
+2022-01-18 23:11:56.050 +00:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: http://localhost:5256
+2022-01-18 23:11:56.052 +00:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2022-01-18 23:11:56.052 +00:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: Development
+2022-01-18 23:11:56.053 +00:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: C:\Users\paulm\OneDrive\Documents\GitHub\Ultimate.Fpl\src\Ultimate.Fpl.Ui\
+2022-01-18 23:11:56.954 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/ - -
+2022-01-18 23:11:57.128 +00:00 [INF] (Microsoft.AspNetCore.Routing.EndpointMiddleware) Executing endpoint '/Index'
+2022-01-18 23:11:57.152 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Route matched with {page = "/Index", area = "", action = "", controller = ""}. Executing page /Index
+2022-01-18 23:11:57.160 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executing handler method Ultimate.Fpl.Ui.Pages.IndexModel.OnGet - ModelState is "Valid"
+2022-01-18 23:11:57.164 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executed handler method OnGet, returned result .
+2022-01-18 23:11:57.168 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executing an implicit handler method - ModelState is "Valid"
+2022-01-18 23:11:57.169 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-01-18 23:11:57.373 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executed page /Index in 217.2356ms
+2022-01-18 23:11:57.378 +00:00 [INF] (Microsoft.AspNetCore.Routing.EndpointMiddleware) Executed endpoint '/Index'
+2022-01-18 23:11:57.401 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/ - - - 200 - text/html;+charset=utf-8 451.1101ms
+2022-01-18 23:11:57.488 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - -
+2022-01-18 23:11:57.592 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - - - 200 11949 application/javascript;+charset=utf-8 103.5552ms
+2022-01-18 23:12:10.474 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/MicrosoftIdentity/Account/SignOut - -
+2022-01-18 23:12:10.484 +00:00 [INF] (Microsoft.AspNetCore.Routing.EndpointMiddleware) Executing endpoint 'Microsoft.Identity.Web.UI.Areas.MicrosoftIdentity.Controllers.AccountController.SignOut (Microsoft.Identity.Web.UI)'
+2022-01-18 23:12:10.520 +00:00 [INF] (Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker) Route matched with {area = "MicrosoftIdentity", action = "SignOut", controller = "Account", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SignOut(System.String) on controller Microsoft.Identity.Web.UI.Areas.MicrosoftIdentity.Controllers.AccountController (Microsoft.Identity.Web.UI).
+2022-01-18 23:12:10.552 +00:00 [INF] (Microsoft.AspNetCore.Mvc.SignOutResult) Executing SignOutResult with authentication schemes (["Cookies","OpenIdConnect"]).
+2022-01-18 23:12:10.567 +00:00 [INF] (Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler) AuthenticationScheme: Cookies signed out.
+2022-01-18 23:12:11.421 +00:00 [INF] (Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler) AuthenticationScheme: OpenIdConnect signed out.
+2022-01-18 23:12:11.428 +00:00 [INF] (Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker) Executed action Microsoft.Identity.Web.UI.Areas.MicrosoftIdentity.Controllers.AccountController.SignOut (Microsoft.Identity.Web.UI) in 902.7051ms
+2022-01-18 23:12:11.435 +00:00 [INF] (Microsoft.AspNetCore.Routing.EndpointMiddleware) Executed endpoint 'Microsoft.Identity.Web.UI.Areas.MicrosoftIdentity.Controllers.AccountController.SignOut (Microsoft.Identity.Web.UI)'
+2022-01-18 23:12:11.439 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/MicrosoftIdentity/Account/SignOut - - - 302 0 - 964.9002ms
+2022-01-18 23:12:30.918 +00:00 [INF] (Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager) User profile is available. Using 'C:\Users\paulm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-01-18 23:12:31.197 +00:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: https://localhost:7256
+2022-01-18 23:12:31.198 +00:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: http://localhost:5256
+2022-01-18 23:12:31.201 +00:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2022-01-18 23:12:31.202 +00:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: Development
+2022-01-18 23:12:31.203 +00:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: C:\Users\paulm\OneDrive\Documents\GitHub\Ultimate.Fpl\src\Ultimate.Fpl.Ui\
+2022-01-18 23:12:32.070 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/ - -
+2022-01-18 23:12:32.170 +00:00 [INF] (Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler) OpenIdConnect was not authenticated. Failure message: Not authenticated
+2022-01-18 23:12:32.176 +00:00 [INF] (Microsoft.AspNetCore.Authorization.DefaultAuthorizationService) Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-01-18 23:12:32.665 +00:00 [INF] (Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler) AuthenticationScheme: OpenIdConnect was challenged.
+2022-01-18 23:12:32.680 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/ - - - 302 0 - 611.4028ms
+2022-01-18 23:14:50.890 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 POST https://localhost:7256/signin-oidc application/x-www-form-urlencoded 653
+2022-01-18 23:14:50.967 +00:00 [ERR] (Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler) Message contains error: 'server_error', error_description: 'AADSTS250004: The request failed with error: AADB2C90289: We encountered an error connecting to the identity provider. Please try again later.
+Trace ID: 84ea5b03-d1ef-4969-9815-73411d4b0500
+Correlation ID: 11b05acc-b6a0-4957-b7eb-ae759aedc290
+Timestamp: 2022-01-18 23:14:52Z', error_uri: 'error_uri is null'.
+2022-01-18 23:14:50.972 +00:00 [INF] (Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler) Error from RemoteAuthentication: Message contains error: 'server_error', error_description: 'AADSTS250004: The request failed with error: AADB2C90289: We encountered an error connecting to the identity provider. Please try again later.
+Trace ID: 84ea5b03-d1ef-4969-9815-73411d4b0500
+Correlation ID: 11b05acc-b6a0-4957-b7eb-ae759aedc290
+Timestamp: 2022-01-18 23:14:52Z', error_uri: 'error_uri is null'..
+2022-01-18 23:14:50.981 +00:00 [ERR] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware) An unhandled exception has occurred while executing the request.
+System.Exception: An error was encountered while handling the remote login.
+ ---> Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectProtocolException: Message contains error: 'server_error', error_description: 'AADSTS250004: The request failed with error: AADB2C90289: We encountered an error connecting to the identity provider. Please try again later.
+Trace ID: 84ea5b03-d1ef-4969-9815-73411d4b0500
+Correlation ID: 11b05acc-b6a0-4957-b7eb-ae759aedc290
+Timestamp: 2022-01-18 23:14:52Z', error_uri: 'error_uri is null'.
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-01-18 23:14:51.218 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 POST https://localhost:7256/signin-oidc application/x-www-form-urlencoded 653 - 500 - text/html;+charset=utf-8 328.3723ms
+2022-01-18 23:14:51.276 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - -
+2022-01-18 23:14:51.286 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - - - 200 11949 application/javascript;+charset=utf-8 9.7072ms
+2022-01-18 23:16:30.369 +00:00 [INF] (Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager) User profile is available. Using 'C:\Users\paulm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-01-18 23:16:30.680 +00:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: https://localhost:7256
+2022-01-18 23:16:30.681 +00:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: http://localhost:5256
+2022-01-18 23:16:30.682 +00:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2022-01-18 23:16:30.683 +00:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: Development
+2022-01-18 23:16:30.684 +00:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: C:\Users\paulm\OneDrive\Documents\GitHub\Ultimate.Fpl\src\Ultimate.Fpl.Ui\
+2022-01-18 23:16:31.659 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/ - -
+2022-01-18 23:16:31.813 +00:00 [INF] (Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler) OpenIdConnect was not authenticated. Failure message: Not authenticated
+2022-01-18 23:16:31.817 +00:00 [INF] (Microsoft.AspNetCore.Authorization.DefaultAuthorizationService) Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-01-18 23:16:32.431 +00:00 [INF] (Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler) AuthenticationScheme: OpenIdConnect was challenged.
+2022-01-18 23:16:32.446 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/ - - - 302 0 - 790.3375ms
+2022-01-18 23:17:56.976 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 POST https://localhost:7256/signin-oidc application/x-www-form-urlencoded 2159
+2022-01-18 23:17:57.278 +00:00 [INF] (Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler) AuthenticationScheme: Cookies signed in.
+2022-01-18 23:17:57.281 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 POST https://localhost:7256/signin-oidc application/x-www-form-urlencoded 2159 - 302 0 - 304.2921ms
+2022-01-18 23:17:57.289 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/ - -
+2022-01-18 23:17:57.304 +00:00 [INF] (Microsoft.AspNetCore.Routing.EndpointMiddleware) Executing endpoint '/Index'
+2022-01-18 23:17:57.325 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Route matched with {page = "/Index", area = "", action = "", controller = ""}. Executing page /Index
+2022-01-18 23:17:57.349 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executing handler method Ultimate.Fpl.Ui.Pages.IndexModel.OnGet - ModelState is "Valid"
+2022-01-18 23:17:57.363 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executed handler method OnGet, returned result .
+2022-01-18 23:17:57.374 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executing an implicit handler method - ModelState is "Valid"
+2022-01-18 23:17:57.378 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-01-18 23:17:57.664 +00:00 [INF] (Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker) Executed page /Index in 326.4648ms
+2022-01-18 23:17:57.669 +00:00 [INF] (Microsoft.AspNetCore.Routing.EndpointMiddleware) Executed endpoint '/Index'
+2022-01-18 23:17:57.691 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/ - - - 200 - text/html;+charset=utf-8 402.5140ms
+2022-01-18 23:17:57.741 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - -
+2022-01-18 23:17:57.749 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - - - 200 11949 application/javascript;+charset=utf-8 7.6764ms
+2022-01-18 23:20:10.198 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/MicrosoftIdentity/Account/SignOut - -
+2022-01-18 23:20:10.208 +00:00 [INF] (Microsoft.AspNetCore.Routing.EndpointMiddleware) Executing endpoint 'Microsoft.Identity.Web.UI.Areas.MicrosoftIdentity.Controllers.AccountController.SignOut (Microsoft.Identity.Web.UI)'
+2022-01-18 23:20:10.240 +00:00 [INF] (Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker) Route matched with {area = "MicrosoftIdentity", action = "SignOut", controller = "Account", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SignOut(System.String) on controller Microsoft.Identity.Web.UI.Areas.MicrosoftIdentity.Controllers.AccountController (Microsoft.Identity.Web.UI).
+2022-01-18 23:20:10.273 +00:00 [INF] (Microsoft.AspNetCore.Mvc.SignOutResult) Executing SignOutResult with authentication schemes (["Cookies","OpenIdConnect"]).
+2022-01-18 23:20:10.285 +00:00 [INF] (Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler) AuthenticationScheme: Cookies signed out.
+2022-01-18 23:20:10.297 +00:00 [INF] (Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler) AuthenticationScheme: OpenIdConnect signed out.
+2022-01-18 23:20:10.300 +00:00 [INF] (Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker) Executed action Microsoft.Identity.Web.UI.Areas.MicrosoftIdentity.Controllers.AccountController.SignOut (Microsoft.Identity.Web.UI) in 50.6382ms
+2022-01-18 23:20:10.304 +00:00 [INF] (Microsoft.AspNetCore.Routing.EndpointMiddleware) Executed endpoint 'Microsoft.Identity.Web.UI.Areas.MicrosoftIdentity.Controllers.AccountController.SignOut (Microsoft.Identity.Web.UI)'
+2022-01-18 23:20:10.306 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/MicrosoftIdentity/Account/SignOut - - - 302 0 - 107.7106ms
+2022-01-18 23:20:13.391 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/signout-oidc?sid=M.10408920206850490033&iss=https://login.microsoftonline.com/9188040d-6c67-4c5b-b112-36a304b66dad/v2.0 - -
+2022-01-18 23:20:13.412 +00:00 [INF] (Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler) Remote signout request processed.
+2022-01-18 23:20:13.413 +00:00 [INF] (Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler) AuthenticationScheme: Cookies signed out.
+2022-01-18 23:20:13.415 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/signout-oidc?sid=M.10408920206850490033&iss=https://login.microsoftonline.com/9188040d-6c67-4c5b-b112-36a304b66dad/v2.0 - - - 200 0 - 24.3429ms
+2022-01-18 23:20:21.132 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/ - -
+2022-01-18 23:20:21.136 +00:00 [INF] (Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler) OpenIdConnect was not authenticated. Failure message: Not authenticated
+2022-01-18 23:20:21.137 +00:00 [INF] (Microsoft.AspNetCore.Authorization.DefaultAuthorizationService) Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-01-18 23:20:21.139 +00:00 [INF] (Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler) AuthenticationScheme: OpenIdConnect was challenged.
+2022-01-18 23:20:21.141 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/ - - - 302 0 - 9.9415ms
+2022-01-18 23:21:14.112 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 POST https://localhost:7256/signin-oidc application/x-www-form-urlencoded 628
+2022-01-18 23:21:14.119 +00:00 [INF] (Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler) Access was denied by the resource owner or by the remote server.
+2022-01-18 23:21:14.127 +00:00 [ERR] (Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler) Message contains error: 'access_denied', error_description: 'AADSTS250006: The request failed with error: AADB2C90091: The user has cancelled entering self-asserted information.
+Trace ID: 3ad9fc83-a5d9-4f01-8ff3-5d67a89a0500
+Correlation ID: 4790b696-3a7d-4b50-b862-4cb5f1701e1b
+Timestamp: 2022-01-18 23:21:15Z', error_uri: 'error_uri is null'.
+2022-01-18 23:21:14.131 +00:00 [INF] (Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler) Error from RemoteAuthentication: Message contains error: 'access_denied', error_description: 'AADSTS250006: The request failed with error: AADB2C90091: The user has cancelled entering self-asserted information.
+Trace ID: 3ad9fc83-a5d9-4f01-8ff3-5d67a89a0500
+Correlation ID: 4790b696-3a7d-4b50-b862-4cb5f1701e1b
+Timestamp: 2022-01-18 23:21:15Z', error_uri: 'error_uri is null'..
+2022-01-18 23:21:14.135 +00:00 [ERR] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware) An unhandled exception has occurred while executing the request.
+System.Exception: An error was encountered while handling the remote login.
+ ---> Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectProtocolException: Message contains error: 'access_denied', error_description: 'AADSTS250006: The request failed with error: AADB2C90091: The user has cancelled entering self-asserted information.
+Trace ID: 3ad9fc83-a5d9-4f01-8ff3-5d67a89a0500
+Correlation ID: 4790b696-3a7d-4b50-b862-4cb5f1701e1b
+Timestamp: 2022-01-18 23:21:15Z', error_uri: 'error_uri is null'.
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-01-18 23:21:14.246 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 POST https://localhost:7256/signin-oidc application/x-www-form-urlencoded 628 - 500 - text/html;+charset=utf-8 134.4206ms
+2022-01-18 23:21:14.299 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request starting HTTP/1.1 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - -
+2022-01-18 23:21:14.306 +00:00 [INF] (Microsoft.AspNetCore.Hosting.Diagnostics) Request finished HTTP/1.1 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - - - 200 11949 application/javascript;+charset=utf-8 6.5024ms

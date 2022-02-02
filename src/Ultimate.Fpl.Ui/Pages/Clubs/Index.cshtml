@@ -1,0 +1,112 @@
+﻿@page
+@model Ultimate.Fpl.Ui.Pages.Clubs.IndexModel
+@{
+    ViewData["Title"] = "Clubs";
+}
+
+<div class="text-center">
+    <h1 class="display-4">@ViewData["Title"]</h1>
+    <p>Statistics for clubs.</p>
+</div>
+<div class="text-center" id="divLoading">
+    <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+</div>
+<table class="table table-striped table-hover" id="tableClubs" style="width: 100%; display: none;">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Clubs[0].ShortName)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Clubs[0].StrengthDefenceHome)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Clubs[0].StrengthAttackHome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Clubs[0].StrengthOverallHome)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Clubs[0].StrengthDefenceAway)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Clubs[0].StrengthAttackAway)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Clubs[0].StrengthOverallAway)
+            </th>
+            <th class="text-end">
+                @Html.DisplayNameFor(model => model.Clubs[0].Strength)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Clubs[0].PenaltyTakersSummary)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Clubs[0].CornersAndIndirectFreekickTakersSummary)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Clubs[0].DirectFreekickTakersSummary)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var club in Model.Clubs)
+        {
+            <tr>
+                <td title="@club.Name">
+                    @Html.DisplayFor(modelItem => club.ShortName)
+                </td>
+                <td class="text-end">
+                    @Html.DisplayFor(modelItem => club.StrengthDefenceHome)
+                </td>
+                <td class="text-end">
+                    @Html.DisplayFor(modelItem => club.StrengthAttackHome)
+                </td>
+                <td class="text-end">
+                    @Html.DisplayFor(modelItem => club.StrengthOverallHome)
+                </td>
+                <td class="text-end">
+                    @Html.DisplayFor(modelItem => club.StrengthDefenceAway)
+                </td>
+                <td class="text-end">
+                    @Html.DisplayFor(modelItem => club.StrengthAttackAway)
+                </td>
+                <td class="text-end">
+                    @Html.DisplayFor(modelItem => club.StrengthOverallAway)
+                </td>
+                <td class="text-end">
+                    @Html.DisplayFor(modelItem => club.Strength)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => club.PenaltyTakersSummary)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => club.CornersAndIndirectFreekickTakersSummary)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => club.DirectFreekickTakersSummary)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts{
+    <script>
+        $(document).ready(function() {
+            var table = $('#tableClubs').DataTable({
+                "colReorder": true,
+                "paging": false,
+                "order": [[0, "asc"]],
+                "searching": false,
+                "info": false,
+                "initComplete": function (settings, json) {
+                    $('#divLoading').hide();
+                    $('#tableClubs').show();
+                }
+            });
+        });
+    </script>
+}

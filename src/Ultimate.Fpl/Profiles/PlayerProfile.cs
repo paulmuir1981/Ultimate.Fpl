@@ -1,6 +1,5 @@
 ﻿using System;
 using AutoMapper;
-using Fpl.Client.Models;
 using Ultimate.Fpl.Extensions;
 using Ultimate.Fpl.Models;
 
