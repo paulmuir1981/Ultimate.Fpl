@@ -4,10 +4,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{56CA8F5D-7A0A-46D9-99F6-72A949179C7A}"
-	ProjectSection(SolutionItems) = preProject
-		.github\workflows\codeql-analysis.yml = .github\workflows\codeql-analysis.yml
-		dependabot.yml = dependabot.yml
-	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ultimate.Fpl.Ui", "src\Ultimate.Fpl.Ui\Ultimate.Fpl.Ui.csproj", "{58FD6B1E-8087-4A81-BE8B-A4F0BFE1B6B7}"
 EndProject
