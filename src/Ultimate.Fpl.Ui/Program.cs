@@ -16,7 +16,13 @@ try
     var outputTemplate = "{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Level:u3}] ({SourceContext}) {Message:lj}{NewLine}{Exception}";
     builder.Host.UseSerilog((ctx, lc) => lc
         .WriteTo.Console(outputTemplate: outputTemplate)
-        .WriteTo.File("log.txt", rollingInterval: RollingInterval.Day, outputTemplate: outputTemplate));
+        .WriteTo.File((ctx.HostingEnvironment.IsDevelopment() ? "" : @"D:\home\LogFiles\Application\") + "log.txt",
+                fileSizeLimitBytes: 1_000_000,
+                rollOnFileSizeLimit: true,
+                rollingInterval: RollingInterval.Day,
+                shared: true,
+                flushToDiskInterval: TimeSpan.FromSeconds(1),
+                outputTemplate: outputTemplate));
 
     builder.Services.AddRazorPages();
 
