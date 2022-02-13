@@ -11,7 +11,6 @@ namespace Fpl.Client.Clients
 
         public async ValueTask<Entry> GetEntryAsync(int entryId, CancellationToken cancellationToken = default)
         {
-            _logger?.LogInformation($"HELLOOOOOOO!");
             _logger?.LogInformation($"{nameof(GetEntryAsync)} invoked");
             if (entryId <= 0)
             {
@@ -33,7 +32,6 @@ namespace Fpl.Client.Clients
 
         public async ValueTask<EntryEventPicks> GetEntryEventPicksAsync(int entryId, int eventId, CancellationToken cancellationToken = default)
         {
-            _logger?.LogInformation($"HELLOOOOOOO!");
             _logger?.LogInformation($"{nameof(GetEntryEventPicksAsync)} invoked");
             if (entryId <= 0)
             {
