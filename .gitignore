@@ -39,3 +39,4 @@ msbuild.wrn
 *.o
 *.so
 /src/Ultimate.Fpl.Ui/logs/
+src/Ultimate.Fpl.Ui/log*.txt

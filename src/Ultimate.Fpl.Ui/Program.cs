@@ -16,7 +16,7 @@ try
     var outputTemplate = "{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Level:u3}] ({SourceContext}) {Message:lj}{NewLine}{Exception}";
     builder.Host.UseSerilog((ctx, lc) => lc
         .WriteTo.Console(outputTemplate: outputTemplate)
-        .WriteTo.File("logs/log.txt", rollingInterval: RollingInterval.Day, outputTemplate: outputTemplate));
+        .WriteTo.File("log.txt", rollingInterval: RollingInterval.Day, outputTemplate: outputTemplate));
 
     builder.Services.AddRazorPages();
 
