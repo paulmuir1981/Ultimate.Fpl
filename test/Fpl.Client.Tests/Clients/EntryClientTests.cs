@@ -1,4 +1,5 @@
-﻿using Fpl.Client.Clients;
+﻿using FluentValidation;
+using Fpl.Client.Clients;
 using System;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -35,9 +36,7 @@ namespace Fpl.Client.Tests.Clients
         [InlineData(0)]
         public async Task GetEntryAsync_InvalidEntryId_Throws(int entryId)
         {
-            var result = await Assert.ThrowsAsync<ArgumentOutOfRangeException>(() => _client.GetEntryAsync(entryId).AsTask());
-            Assert.Equal("entryId", result.ParamName);
-            Assert.Equal(entryId, result.ActualValue);
+            var result = await Assert.ThrowsAsync<ValidationException>(() => _client.GetEntryAsync(entryId).AsTask());
         }
 
         [Fact]
@@ -60,9 +59,7 @@ namespace Fpl.Client.Tests.Clients
         [InlineData(0)]
         public async Task GetEventPicksAsync_InvalidEntryId_Throws(int entryId)
         {
-            var result = await Assert.ThrowsAsync<ArgumentOutOfRangeException>(() => _client.GetEntryEventPicksAsync(entryId, 1).AsTask());
-            Assert.Equal("entryId", result.ParamName);
-            Assert.Equal(entryId, result.ActualValue);
+            var result = await Assert.ThrowsAsync<ValidationException>(() => _client.GetEntryEventPicksAsync(entryId, 1).AsTask());
         }
 
         [Theory]
@@ -73,9 +70,7 @@ namespace Fpl.Client.Tests.Clients
         [InlineData(int.MaxValue)]
         public async Task GetEventPicksAsync_InvalidEventId_Throws(int eventId)
         {
-            var result = await Assert.ThrowsAsync<ArgumentOutOfRangeException>(() => _client.GetEntryEventPicksAsync(5514, eventId).AsTask());
-            Assert.Equal("eventId", result.ParamName);
-            Assert.Equal(eventId, result.ActualValue);
+            var result = await Assert.ThrowsAsync<ValidationException>(() => _client.GetEntryEventPicksAsync(5514, eventId).AsTask());
         }
     }
 }

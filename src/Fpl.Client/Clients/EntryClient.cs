@@ -9,8 +9,6 @@ namespace Fpl.Client.Clients
 {
     public class EntryClient : BaseClient, IEntryClient
     {
-        private const string EntryUriFormat = BaseUri + "entry/{0}/";
-        private const string EventPicksUriFormat = EntryUriFormat + "event/{1}/picks/";
         private readonly IValidator<GetEntryQuery> _getEntryValidator = new GetEntryQueryValidator();
         private readonly IValidator<GetEntryEventPicksQuery> _getEntryEventPicksValidator = new GetEntryEventPicksQueryValidator();
         public EntryClient(HttpClient client, ILogger<EntryClient> logger = null) : base(client, logger) { }
