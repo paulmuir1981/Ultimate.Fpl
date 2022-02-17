@@ -1,4 +1,5 @@
 ﻿using Fpl.Client.Models.General;
+using Fpl.Client.Queries.General;
 using Microsoft.Extensions.Logging;
 
 namespace Fpl.Client.Clients
@@ -10,7 +11,7 @@ namespace Fpl.Client.Clients
         public ValueTask<Data> GetDataAsync(CancellationToken cancellationToken = default)
         {
             _logger?.LogInformation($"{nameof(GetDataAsync)} invoked");
-            return GetAsync<Data>($"{BaseUri}bootstrap-static/", cancellationToken);
+            return GetAsync<GetDataQuery, Data>(new GetDataQuery(), null, cancellationToken);
         }
     }
 }
