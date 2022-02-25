@@ -44,7 +44,7 @@ namespace Fpl.Client.Models.Entries
         public int SummaryEventPoints { get; set; }
 
         [JsonPropertyName("summary_event_rank")]
-        public int SummaryEventRank { get; set; }
+        public int? SummaryEventRank { get; set; }
 
         [JsonPropertyName("current_event")]
         public int CurrentEvent { get; set; }

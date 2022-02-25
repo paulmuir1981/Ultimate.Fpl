@@ -1,6 +1,6 @@
 ﻿namespace Fpl.Client.Queries.Entries
 {
-    public interface IGetByEntryIdQuery<TResponse> : IQuery<TResponse>
+    public interface IGetByEntryIdQuery : IQuery
     {
         int EntryId { get; init; }
     }
