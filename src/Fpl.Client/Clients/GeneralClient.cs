@@ -4,14 +4,14 @@ using Microsoft.Extensions.Logging;
 
 namespace Fpl.Client.Clients
 {
-    public class GeneralClient : BaseClient, IGeneralClient
+    public class GeneralClient : Client, IGeneralClient
     {
         public GeneralClient(HttpClient client, ILogger<GeneralClient> logger = null) : base(client, logger) { }
 
         public ValueTask<Data> GetDataAsync(CancellationToken cancellationToken = default)
         {
             _logger?.LogInformation($"{nameof(GetDataAsync)} invoked");
-            return GetAsync<GetDataQuery, Data>(new GetDataQuery(), null, cancellationToken);
+            return GetAsync<Data>(new GetDataQuery(), cancellationToken);
         }
     }
 }

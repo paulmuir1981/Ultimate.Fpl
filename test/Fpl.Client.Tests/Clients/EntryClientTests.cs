@@ -1,5 +1,5 @@
-﻿using FluentValidation;
-using Fpl.Client.Clients;
+﻿using Fpl.Client.Clients;
+using Fpl.Client.Validation;
 using System;
 using System.Net.Http;
 using System.Threading.Tasks;
