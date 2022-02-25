@@ -14,10 +14,10 @@ namespace Fpl.Client.Models.Entries
         public int TotalPoints { get; set; }
 
         [JsonPropertyName("rank")]
-        public int Rank { get; set; }
+        public int? Rank { get; set; }
 
         [JsonPropertyName("rank_sort")]
-        public int RankSort { get; set; }
+        public int? RankSort { get; set; }
 
         [JsonPropertyName("overall_rank")]
         public int OverallRank { get; set; }

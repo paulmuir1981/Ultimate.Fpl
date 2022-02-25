@@ -42,7 +42,7 @@ namespace Fpl.Client.Tests.Clients
         [Fact]
         public async Task GetEventPicksAsync_ReturnsOk()
         {
-            var result = await _client.GetEntryEventPicksAsync(5514, 1);
+            var result = await _client.GetEntryEventPicksAsync(5514, 27);
 
             Assert.NotNull(result);
         }
