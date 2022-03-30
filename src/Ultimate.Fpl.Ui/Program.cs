@@ -28,7 +28,7 @@ try
 
     var clientHandler = new HttpClientHandler
     {
-        AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate
+        AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate,
     };
 
     builder.Services.AddHttpClient<IGeneralClient, GeneralClient>()

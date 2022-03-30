@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using Fpl.Client.Models.Entries;
+using Fpl.Client.Models.EntryEventPicks;
 using Ultimate.Fpl.Ui.Models.Entries;
 using static Fpl.Client.Models.Constants;
-using ClientEntryEventPicks = Fpl.Client.Models.Entries.EntryEventPicks;
+using ClientEntryEventPicks = Fpl.Client.Models.EntryEventPicks.EntryEventPicks;
 using EntryEventPicks = Ultimate.Fpl.Ui.Models.Entries.EntryEventPicks;
 
 namespace Ultimate.Fpl.Ui.Profiles.Entries
