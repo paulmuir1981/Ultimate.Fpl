@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
-using ClientPick = Fpl.Client.Models.Entries.Pick;
-using Ultimate.Fpl.Ui.Models.Entries;
+using ClientPick = Fpl.Client.Models.EntryEventPicks.Pick;
 using Ultimate.Fpl.Ui.Models.General;
+using Pick = Ultimate.Fpl.Ui.Models.Entries.Pick;
 
 namespace Ultimate.Fpl.Ui.Profiles.Entries
 {

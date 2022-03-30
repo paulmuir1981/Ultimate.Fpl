@@ -1,10 +1,13 @@
-﻿using Fpl.Client.Models.Entries;
+﻿using Fpl.Client.Models.EntryEventPicks;
+using System.ComponentModel.DataAnnotations;
 
 namespace Fpl.Client.Queries.Entries
 {
-    public class GetEntryEventPicksQuery : GetByEntryIdQuery<EntryEventPicks>, IGetByEventIdQuery
+    public class GetEntryEventPicksQuery : GetByEntryIdQuery<EntryEventPicks>
     {
-        public int EventId { get; init; }
+        [Required]
+        [Range(1, 38)]
+        public int? EventId { get; init; }
         public override string Uri => $"{base.Uri}event/{EventId}/picks/";
     }
 }

@@ -1,9 +1,10 @@
 ﻿using Fpl.Client.Models.Entries;
+using Fpl.Client.Models.EntryEventPicks;
+using EntryHistory = Fpl.Client.Models.EntryHistory.EntryHistory;
 using Fpl.Client.Queries.Entries;
-using Fpl.Client.Validation;
-using Fpl.Client.Validation.Entries;
 using Microsoft.Extensions.Logging;
 using System.Net;
+using Fpl.Client.Models.EntryTransfers;
 
 namespace Fpl.Client.Clients
 {
@@ -15,19 +16,16 @@ namespace Fpl.Client.Clients
             _logger?.LogInformation($"{nameof(GetEntryAsync)} invoked");
 
             var query = new GetEntryQuery { EntryId = entryId };
-            var validation = new GetByEntryIdQueryValidation(query);
-            var validations = new Validations(new IValidation[] { validation });
-
-            Validate(validations);
+            query.Validate();
 
             try
             {
-                return await GetAsync<Entry>(query, cancellationToken);
+                return await GetAsync(query, cancellationToken);
             }
             catch (HttpRequestException ex)
             {
                 var paramName = nameof(entryId);
-                Exception exception = new ArgumentException($"{paramName} does not exist", paramName, ex);
+                Exception exception = new ArgumentException($"{paramName} ({entryId}) does not exist", paramName, ex);
                 if (ex.StatusCode != HttpStatusCode.NotFound)
                 {
                     exception = ex;
@@ -42,19 +40,68 @@ namespace Fpl.Client.Clients
             _logger?.LogInformation($"{nameof(GetEntryEventPicksAsync)} invoked");
 
             var query = new GetEntryEventPicksQuery { EntryId = entryId, EventId = eventId };
-            var entryValidation = new GetByEntryIdQueryValidation(query);
-            var eventValidation = new GetByEventIdQueryValidation(query);
-            var validations = new Validations(new IValidation[] { entryValidation, eventValidation });
-
-            Validate(validations);
+            query.Validate();
 
             try
             {
-                return await GetAsync<EntryEventPicks>(query,  cancellationToken);
+                return await GetAsync(query, cancellationToken);
             }
             catch (HttpRequestException ex)
             {
-                var exception = new ArgumentException($"{nameof(entryId)} or {nameof(eventId)} does not exist", ex);
+                var paramName = nameof(entryId);
+                Exception exception = new ArgumentException($"{paramName} ({entryId}) does not exist", paramName, ex);
+                if (ex.StatusCode != HttpStatusCode.NotFound)
+                {
+                    exception = ex;
+                }
+                _logger?.LogError(exception, "{message}", exception.Message);
+                throw exception;
+            }
+        }
+
+        public async ValueTask<EntryHistory> GetEntryHistoryAsync(int entryId, CancellationToken cancellationToken = default)
+        {
+            _logger?.LogInformation($"{nameof(GetEntryHistoryAsync)} invoked");
+
+            var query = new GetEntryHistoryQuery { EntryId = entryId };
+            query.Validate();
+
+            try
+            {
+                return await GetAsync(query, cancellationToken);
+            }
+            catch (HttpRequestException ex)
+            {
+                var paramName = nameof(entryId);
+                Exception exception = new ArgumentException($"{paramName} ({entryId}) does not exist", paramName, ex);
+                if (ex.StatusCode != HttpStatusCode.NotFound)
+                {
+                    exception = ex;
+                }
+                _logger?.LogError(exception, "{message}", exception.Message);
+                throw exception;
+            }
+        }
+
+        public async ValueTask<List<EntryTransfer>> GetEntryTransfersAsync(int entryId, CancellationToken cancellationToken = default)
+        {
+            _logger?.LogInformation($"{nameof(GetEntryTransfersAsync)} invoked");
+
+            var query = new GetEntryTransfersQuery { EntryId = entryId };
+            query.Validate();
+
+            try
+            {
+                return await GetAsync(query, cancellationToken);
+            }
+            catch (HttpRequestException ex)
+            {
+                var paramName = nameof(entryId);
+                Exception exception = new ArgumentException($"{paramName} ({entryId}) does not exist", paramName, ex);
+                if (ex.StatusCode != HttpStatusCode.NotFound)
+                {
+                    exception = ex;
+                }
                 _logger?.LogError(exception, "{message}", exception.Message);
                 throw exception;
             }

@@ -11,7 +11,7 @@ namespace Fpl.Client.Clients
         public ValueTask<Data> GetDataAsync(CancellationToken cancellationToken = default)
         {
             _logger?.LogInformation($"{nameof(GetDataAsync)} invoked");
-            return GetAsync<Data>(new GetDataQuery(), cancellationToken);
+            return GetAsync(new GetDataQuery(), cancellationToken);
         }
     }
 }

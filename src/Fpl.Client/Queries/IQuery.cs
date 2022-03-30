@@ -1,8 +1,8 @@
 ﻿namespace Fpl.Client.Queries
 {
-    public interface IQuery
+    public interface IQuery<TResponse>
     {
         string Uri { get; }
+        void Validate();
     }
-    public interface IQuery<TResponse> : IQuery { }
 }
