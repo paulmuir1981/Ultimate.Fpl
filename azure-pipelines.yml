@@ -3,6 +3,8 @@
 # Add steps that publish symbols, save build artifacts, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
 
+name: $(Build.DefinitionName)_$(Year:yyyy)$(DayOfYear)$(Rev:rr)
+
 trigger:
 - main
 
@@ -16,23 +18,30 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
-- task: NuGetToolInstaller@1
+- task: NuGetAuthenticate@0
+  displayName: 'NuGet Authenticate'
 
-- task: NuGetCommand@2
+- task: UseDotNet@2
+  displayName: 'Use Dot Net 6'
   inputs:
-    restoreSolution: '$(solution)'
+    packageType: 'sdk'
+    version: '6.x'
 
-- task: VSBuild@1
-  inputs:
-    solution: '$(solution)'
-    msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:DesktopBuildPackageLocation="$(build.artifactStagingDirectory)\WebApp.zip" /p:DeployIisAppPath="Default Web Site"'
-    platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'
+- script: dotnet restore
+  displayName: 'Restore'
 
-- task: VSTest@2
+- task: DotNetCoreCLI@2
+  displayName: 'Build'
   inputs:
-    platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'
+    command: 'build'
+    projects: 'src/**/*.csproj'
+
+- task: DotNetCoreCLI@2
+  displayName: 'Run Tests'
+  inputs:
+    command: 'test'
+    projects: 'test/**/*.csproj'
+    testRunTitle: 'Pipeline Test Run'
 
 - task: DotNetCoreCLI@2
   displayName: 'dotnet publish'
